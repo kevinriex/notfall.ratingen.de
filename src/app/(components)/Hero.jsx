@@ -5,7 +5,9 @@ export default function Hero() {
         <img
           class="d-block mx-auto mb-4"
           src="/wappen.jpg"
-          alt=""
+          alt="Das Wappen der Stadt Ratingen"
+          height="250em"
+          width="250em"
         />
         <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
         <div class="col-lg-6 mx-auto">
