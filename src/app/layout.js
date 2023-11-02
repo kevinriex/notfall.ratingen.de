@@ -1,12 +1,15 @@
 import { Inter } from 'next/font/google';
-import "./globals.css"
 
 // Import Bootstrap CSS
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+
+// import "./globals.css"
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
+
+import "@/styles/styles.scss"
 
 const inter = Inter({ subsets: ['latin'] });
 
