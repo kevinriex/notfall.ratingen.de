@@ -17,12 +17,12 @@ export default function Footer() {
               <a href="#" className="nav-link px-2 text-body-secondary">
                 Pricing
               </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-body-secondary">
-                FAQs
-              </a>
             </li>*/}
+            <li className="nav-item">
+              <a href="/" className="nav-link px-2 text-body-secondary">
+                Startseite
+              </a>
+            </li>
             <li className="nav-item">
               <a href="/impressum" className="nav-link px-2 text-body-secondary">
                 Impressum

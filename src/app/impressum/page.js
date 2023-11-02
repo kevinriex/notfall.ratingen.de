@@ -1,11 +1,10 @@
-import SiteLink from './(components)/sitelink'
-import Footer from './(components)/Footer'
-import Hero from './(components)/Hero'
+import Footer from '../(components)/Footer'
+import Impressum from '../(components)/Impressum'
 
 export default function Home() {
   return (
     <>
-    <Hero></Hero>
+    <Impressum></Impressum>
       <Footer></Footer>
     </>
   )
