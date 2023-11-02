@@ -3,7 +3,7 @@ export default function Footer() {
       <div className="container">
         <footer className="py-3 my-4">
           <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a href="#" className="nav-link px-2 text-body-secondary">
                 Home
               </a>
@@ -22,14 +22,14 @@ export default function Footer() {
               <a href="#" className="nav-link px-2 text-body-secondary">
                 FAQs
               </a>
-            </li>
+            </li>*/}
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-body-secondary">
-                About
+              <a href="/impressum" className="nav-link px-2 text-body-secondary">
+                Impressum
               </a>
-            </li>
+            </li> 
           </ul>
-          <p className="text-center text-body-secondary">© 2023 Company, Inc</p>
+          <p className="text-center text-body-secondary">© 2023, Stadt Ratingen</p>
         </footer>
       </div>
   );
