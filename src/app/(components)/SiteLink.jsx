@@ -1,8 +1,16 @@
-export default function SiteLink() {
-    return (
-      <sitelink>
-        <p>Hello World;)</p>
-      </sitelink>
-    )
-  }
-  
+export default function SiteLink({ name, href, desc, icon }) {
+  return (
+    <div className="col d-flex align-items-start">
+      <div className="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        {icon}
+      </div>
+      <div>
+        <h3 className="fs-4 text-body-emphasis">{name}</h3>
+        <p>{desc}</p>
+        <a href={href} className="btn btn-primary">
+          Hier gehts lang...
+        </a>
+      </div>
+    </div>
+  );
+}
