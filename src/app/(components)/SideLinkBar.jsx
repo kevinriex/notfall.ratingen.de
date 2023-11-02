@@ -77,9 +77,9 @@ export default function SideLinkBar({ mastername }) {
   </div> */}
       <Container className="px-4 py-5">
         <h2 class="pb-2 border-bottom">{mastername}</h2>
-        {LinkSammlung.map(linkTriple => (
-          <Row className="g-4 py-5">
-            {linkTriple.map(({ name, href, desc, icon }, idx) => <Col><SiteLink key={idx} name={name} href={href} desc={desc} icon={icon}/></Col>)}
+        {LinkSammlung.map((linkTriple, idx) => (
+          <Row className="g-4 py-5" key={idx}>
+            {linkTriple.map(({ name, href, desc, icon }, idx) => <Col key={idx}><SiteLink key={idx} name={name} href={href} desc={desc} icon={icon}/></Col>)}
           </Row>
         ))}
       </Container>
