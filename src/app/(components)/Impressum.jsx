@@ -1,7 +1,7 @@
 export default function Impressum() {
   return (
-    <div className="container">
-      <h1>Impressum</h1>
+    <div className="px-4 py-5 my-5 container">
+      <h1 className="py-5">Impressum</h1>
       <div className="uncode_text_column">
         <h2>Angaben gemäß § 5 TMG</h2>
         <p>
@@ -14,7 +14,8 @@ export default function Impressum() {
         <p>
           Telefon: <a href="tel:004921025501001">02102 550-1001</a>
           <br />
-          E-Mail: <a href="mailto:datenschutz@ratingen.de">datenschutz@ratingen.de</a>
+          E-Mail:{" "}
+          <a href="mailto:datenschutz@ratingen.de">datenschutz@ratingen.de</a>
         </p>
         <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
         <p>
@@ -81,14 +82,11 @@ export default function Impressum() {
           werden wir derartige Inhalte umgehend entfernen.
         </p>
         <h3>Gestaltung &amp; Umsetzung</h3>
-        <p>
-          Gestaltung: Kevin Yven Riexinger, Konstantin Westhoff
-          <br />
-          Umsetzung: Kevin Yven Riexinger, Konstantin Westhoff {/*–{" "}
-           <a href="https://maikgrabosch.de" target="_blank" rel="noopener">
-            https://maikgrabosch.de
-          </a> */}
-        </p>
+
+        <ul>
+          <li>Kevin Yven Riexinger</li>
+          <li>Konstantin Westhoff</li>
+        </ul>
       </div>
     </div>
   );
