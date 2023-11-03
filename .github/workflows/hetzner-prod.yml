@@ -13,9 +13,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get Build Output
-              uses: actions/download-artifact@v3
+              uses: dawidd6/action-download-artifact@v2
               with:
-                  name: project-build-${{ github.sha }}
+                  commit: ${{ github.sha }}
 
             - name: Display structure of downloaded files
               run: ls -R
