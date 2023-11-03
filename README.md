@@ -21,6 +21,10 @@ Als VCS wurde Git genutzt. Geschrieben wurde der Code in Visual Studio Code.
 
 ## Bauen des Projekts
 
+Der akutellste Build ist immer unter [dem aktuellsten Workflow Run](wf-run) zu finden.
+
+Selbst bauen:
+
 ```bash
 npm ci
 npm run build
@@ -30,11 +34,11 @@ Die kompilierten Dateien sind dann in `out/` zu finden und können direkt über 
 
 ## Vergleiche
 
-| Webseite Alt             |            Webseite Neu            |
-| ------------------------ | :--------------------------------: |
-| ![Alte Ansicht][alt1]    |       ![Neue Ansicht][neu1]        |
-|                          |       ![Neue Ansicht][neu2]        |
-| ![Alte Ansicht][alt-res] |                                    |
+| Webseite Alt             |     Webseite Neu      |
+| ------------------------ | :-------------------: |
+| ![Alte Ansicht][alt1]    | ![Neue Ansicht][neu1] |
+|                          | ![Neue Ansicht][neu2] |
+| ![Alte Ansicht][alt-res] |                       |
 
 ### Responsivität der neuen Webseite
 
@@ -60,4 +64,4 @@ Auf [http://localhost:3000](http://localhost:3000) läuft dann der ganze Spaß.
 [alt-res]: ./assets/ratingen-alt-responsive.png
 [neu1]: ./assets/ratingen-neu1.png
 [neu2]: ./assets/ratingen-neu2.png
-[neu-res-vid]: ./assets/ratingen-neu-res.mov
+[wf-run]: https://github.com/kevinriex/notfall.ratingen.de/actions/workflows/build-project.yml
