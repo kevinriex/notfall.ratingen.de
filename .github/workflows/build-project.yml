@@ -7,11 +7,10 @@ on:
 
 permissions:
     contents: read
-    pages: write
     id-token: write
 
 concurrency:
-    group: 'pages'
+    group: 'build'
     cancel-in-progress: false
 
 jobs:
