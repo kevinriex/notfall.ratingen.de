@@ -30,11 +30,11 @@ Die kompilierten Dateien sind dann in `out/` zu finden und können direkt über 
 
 ## Vergleiche
 
-| Webseite Alt             |                                      Webseite Neu                                      |
-| ------------------------ | :------------------------------------------------------------------------------------: |
-| ![Alte Ansicht][alt1]    |                                 ![Neue Ansicht][neu1]                                  |
-| ![Alte Ansicht][alt-res] |                                 ![Neue Ansicht][neu2]                                  |
-|                          | https://github.com/kevinriex/notfall.ratingen.de/assets/42553393/18cf77a4-119f-48be-9f68-05a313d24d86 |
+| Webseite Alt             |         Webseite Neu          |
+| ------------------------ | :---------------------------: |
+| ![Alte Ansicht][alt1]    |     ![Neue Ansicht][neu1]     |
+| ![Alte Ansicht][alt-res] |     ![Neue Ansicht][neu2]     |
+|                          | ./assets/ratingen-neu-res.mp4 |
 
 ## Development Server
 
