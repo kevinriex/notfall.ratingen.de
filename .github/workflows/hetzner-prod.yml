@@ -1,21 +1,31 @@
-name: Vercel Production Deployment
+name: Hetzner Production Deployment
 env:
-    VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-    VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    SERVER_HOST: ${{ secrets.SERVER_HOST }}
+    SERVER_PORT: ${{ secrets.SERVER_PORT }}
+    SERVER_USER: ${{ secrets.SERVER_USER }}
+    SERVER_PASS: ${{ secrets.SERVER_PASS }}
 on:
     push:
         branches:
-            - main
+            - test
 jobs:
-    Deploy-Production:
+    Deploy-Production-Hetzner:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
-            - name: Install Vercel CLI
-              run: npm install --global vercel@latest
-            - name: Pull Vercel Environment Information
-              run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Build Project Artifacts
-              run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-            - name: Deploy Project Artifacts to Vercel
-              run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+            - name: Build
+              run: npm run build
+      
+            - name: Verify build
+              run: ls -la out
+      
+            - name: copy file via ssh key
+              uses: appleboy/scp-action@master
+              env:
+                  HOST:  ${{ secrets.SERVER_HOST }}
+                  PORT:  ${{ secrets.SERVER_PORT }}
+                  USERNAME:  ${{ secrets.SERVER_USER }}
+                  PASSWORD: ${{ secrets.SERVER_PASS }}
+              with:
+                source: "./out"
+                target: "~"
+                strip_components: 2 # this is important
