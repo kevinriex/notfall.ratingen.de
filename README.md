@@ -30,11 +30,11 @@ Die kompilierten Dateien sind dann in `out/` zu finden und können direkt über 
 
 ## Vergleiche
 
-| Webseite Alt             |               Webseite Neu               |
-| ------------------------ | :--------------------------------------: |
-| ![Alte Ansicht][alt1]    |          ![Neue Ansicht][neu1]           |
-| ![Alte Ansicht][alt-res] |          ![Neue Ansicht][neu2]           |
-|                          | ![Neue, responsive Ansicht][neu-res-vid] |
+| Webseite Alt             |          Webseite Neu           |
+| ------------------------ | :-----------------------------: |
+| ![Alte Ansicht][alt1]    |      ![Neue Ansicht][neu1]      |
+| ![Alte Ansicht][alt-res] |      ![Neue Ansicht][neu2]      |
+|                          | [![](neu-res-vid)](neu-res-vid) |
 
 ## Development Server
 
@@ -53,7 +53,7 @@ bun dev
 Auf [http://localhost:3000](http://localhost:3000) läuft dann der ganze Spaß.
 
 [alt1]: ./assets/ratingen-alt.png
-[alt-res]: ./assets/ratingen-alt-res.png
+[alt-res]: ./assets/ratingen-alt-responsive.png
 [neu1]: ./assets/ratingen-neu1.png
 [neu2]: ./assets/ratingen-neu2.png
 [neu-res-vid]: ./assets/ratingen-neu-res.mov
