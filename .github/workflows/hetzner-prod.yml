@@ -12,26 +12,22 @@ jobs:
     Deploy-Production-Hetzner:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-
-            - name: Node Setup
-              uses: actions/setup-node@v1
+            - name: Get Build Output
+              uses: actions/download-artifact@v3
               with:
-                node-version: 20
-            - name: npm clean install
-              run: npm ci
-            - name: npm build
-              run: npm run build
-      
+                  name: project-build-${{ github.sha }}
+
+            - name: Display structure of downloaded files
+              run: ls -R
+
             - name: copy file via ssh key
               uses: appleboy/scp-action@master
               with:
-                host:  ${{ secrets.SERVER_HOST }}
-                port:  ${{ secrets.SERVER_PORT }}
-                username:  ${{ secrets.SERVER_USER }}
-                password: ${{ secrets.SERVER_PASS }}
-                key: ${{ secrets.SERVER_KEY }}
-                source: "./out"
-                target: "public/"
-                strip_components: 2 # this is important
+                  host: ${{ secrets.SERVER_HOST }}
+                  port: ${{ secrets.SERVER_PORT }}
+                  username: ${{ secrets.SERVER_USER }}
+                  password: ${{ secrets.SERVER_PASS }}
+                  key: ${{ secrets.SERVER_KEY }}
+                  source: './out'
+                  target: 'public/'
+                  strip_components: 2 # this is important
