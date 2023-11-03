@@ -12,11 +12,18 @@ jobs:
     Deploy-Production-Hetzner:
         runs-on: ubuntu-latest
         steps:
-            - name: Build
-              run: npm run build
+            # - name: Checkout
+            #   uses: actions/checkout@v3
+            # - name: Build
+            #   run: npm run build
       
-            - name: Verify build
-              run: ls -la out
+            # - name: Verify build
+            #   run: ls -la out
+            - uses: actions/setup-node@v1
+              with:
+                node-version: 20
+            - run: npm ci
+            - run: npm run build
       
             - name: copy file via ssh key
               uses: appleboy/scp-action@master
