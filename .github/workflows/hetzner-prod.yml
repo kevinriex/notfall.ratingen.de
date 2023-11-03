@@ -32,6 +32,7 @@ jobs:
                   PORT:  ${{ secrets.SERVER_PORT }}
                   USERNAME:  ${{ secrets.SERVER_USER }}
                   PASSWORD: ${{ secrets.SERVER_PASS }}
+                  KEY: ${{ secrets.SERVER_KEY }}
               with:
                 source: "./out"
                 target: "~"
