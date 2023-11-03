@@ -33,8 +33,12 @@ Die kompilierten Dateien sind dann in `out/` zu finden und können direkt über 
 | Webseite Alt             |            Webseite Neu            |
 | ------------------------ | :--------------------------------: |
 | ![Alte Ansicht][alt1]    |       ![Neue Ansicht][neu1]        |
-| ![Alte Ansicht][alt-res] |       ![Neue Ansicht][neu2]        |
-|                          | ![][./assets/ratingen-neu-res.mp4] |
+|                          |       ![Neue Ansicht][neu2]        |
+| ![Alte Ansicht][alt-res] |                                    |
+
+### Responsivität der neuen Webseite
+
+https://github.com/kevinriex/notfall.ratingen.de/assets/42553393/6053255e-2de2-4999-9773-44220b882e00
 
 ## Development Server
 
