@@ -40,13 +40,13 @@ const LinkSammlung = [
     },
     {
       name: "Sperrmüllanmeldung",
-      href: "https://www.awistalogistik.de/das-bieten-wir/ratingen/",
+      href: "https://awistalogistik.de/das-bieten-wir/ratingen/",
       desc: "Hier finden sie alle wichtigen Dienstleistungen.",
       icon: <FontAwesomeIcon icon={faTrash} />
     }],
     [{
       name: "VHS",
-      href: "https://www.vhs-ratingen.de/",
+      href: "https://vhs-ratingen.de/",
       desc: "Hier finden sie alle wichtigen Dienstleistungen.",
       icon: <FontAwesomeIcon icon={faSchool} />
     },
@@ -58,7 +58,7 @@ const LinkSammlung = [
     },
     {
       name: "Aktuelle Informationen",
-      href: "https://www.facebook.com/DeinRatingen/",
+      href: "https://facebook.com/DeinRatingen/",
       desc: "Hier finden sie alle wichtigen Dienstleistungen.",
       icon: <FontAwesomeIcon icon={faFacebook} />
     }]
