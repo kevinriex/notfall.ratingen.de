@@ -11,8 +11,7 @@ export default function Impressum() {
           40878 Ratingen
         </p>
         <h2>Kontakt</h2>
-        <p>
-          Telefon: <a href="tel:004921025501001">02102 550-1001</a>
+        <p>Telefon: <a href="tel:004921025501001">02102 550-1001</a>
           <br />
           E-Mail:{" "}
           <a href="mailto:datenschutz@ratingen.de">datenschutz@ratingen.de</a>

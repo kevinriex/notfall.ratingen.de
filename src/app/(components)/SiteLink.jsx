@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
+
 export default function SiteLink({ name, href, desc, icon }) {
   return (
     <div className="col d-flex align-items-start">
@@ -8,7 +11,8 @@ export default function SiteLink({ name, href, desc, icon }) {
         <h3 className="fs-4 text-body-emphasis">{name}</h3>
         <p>{desc}</p>
         <a href={href} className="btn btn-primary">
-          Hier gehts lang...
+          {new RegExp(/(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/, 'gm').exec(href).groups.fqdn}{' '}
+          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
       </div>
     </div>

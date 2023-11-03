@@ -10,7 +10,7 @@ import Col from 'react-bootstrap/Col';
 const LinkSammlung = [
     [{
       name: "Serviceportal",
-      href:"https://serviceportal.ratingen.de",
+      href:"https://serviceportal.ratingen.de/",
       desc: "Hier finden sie alle wichtigen Dienstleistungen.",
       icon: <FontAwesomeIcon icon={faUser} />
     },
@@ -22,7 +22,7 @@ const LinkSammlung = [
     },
     {
       name: "Ratsinformationssystem",
-      href: "https://ratsinfo.ratingen.de",
+      href: "https://ratsinfo.ratingen.de/",
       desc: "Hier finden sie alle Ratsunterlagen.",
       icon: <FontAwesomeIcon icon={faLandmark} />
     }],
@@ -52,13 +52,13 @@ const LinkSammlung = [
     },
     {
       name: "Geoportal",
-      href: "https://gdi.regioit.de/portal/apps/sites/#/kartendienste",
+      href: "https://gdi.regioit.de/portal/apps/sites/#/kartendienste/",
       desc: "Hier finden sie alle wichtigen Dienstleistungen.",
       icon: <FontAwesomeIcon icon={faEarthEurope} />
     },
     {
       name: "Aktuelle Informationen",
-      href: "https://www.facebook.com/DeinRatingen",
+      href: "https://www.facebook.com/DeinRatingen/",
       desc: "Hier finden sie alle wichtigen Dienstleistungen.",
       icon: <FontAwesomeIcon icon={faFacebook} />
     }]
