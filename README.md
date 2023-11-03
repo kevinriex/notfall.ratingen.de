@@ -28,6 +28,14 @@ npm run build
 
 Die kompilierten Dateien sind dann in `out/` zu finden und können direkt über einen einfachen HTTP Server (z.B. Apache, etc.) bereitgestellt werden.
 
+## Vergleiche
+
+| Webseite Alt             |               Webseite Neu               |
+| ------------------------ | :--------------------------------------: |
+| ![Alte Ansicht][alt1]    |          ![Neue Ansicht][neu1]           |
+| ![Alte Ansicht][alt-res] |          ![Neue Ansicht][neu2]           |
+|                          | ![Neue, responsive Ansicht][neu-res-vid] |
+
 ## Development Server
 
 Development Server starten:
@@ -43,3 +51,9 @@ bun dev
 ```
 
 Auf [http://localhost:3000](http://localhost:3000) läuft dann der ganze Spaß.
+
+[alt1]: ./assets/ratingen-alt.png
+[alt-res]: ./assets/ratingen-alt-res.png
+[neu1]: ./assets/ratingen-neu1.png
+[neu2]: ./assets/ratingen-neu2.png
+[neu-res-vid]: ./assets/ratingen-neu-res.mov
