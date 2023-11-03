@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Impressum() {
     return (
         <div className="px-4 py-5 my-5 container">
@@ -93,11 +95,12 @@ export default function Impressum() {
                 </p>
                 <h3>Gestaltung &amp; Umsetzung</h3>
 
-                <ul>
-                    <li>Kevin Yven Riexinger</li>
-                    <li>Konstantin Westhoff</li>
-                </ul>
-            </div>
-        </div>
-    );
+        <ul>
+          <li><strong>Design:</strong> Kevin Yven Riexinger</li>
+          <li><strong>Infrastruktur:</strong> Konstantin Westhoff</li>
+          <li><strong>Code:</strong> Beide :)</li>
+        </ul>
+      </div>
+    </div>
+  );
 }
