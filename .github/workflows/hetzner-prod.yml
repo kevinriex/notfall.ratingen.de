@@ -35,5 +35,5 @@ jobs:
                   KEY: ${{ secrets.SERVER_KEY }}
               with:
                 source: "./out"
-                target: "~"
+                target: "public/"
                 strip_components: 2 # this is important
