@@ -21,7 +21,7 @@ Als VCS wurde Git genutzt. Geschrieben wurde der Code in Visual Studio Code.
 
 ## Bauen des Projekts
 
-Der akutellste Build ist immer unter [dem aktuellsten Workflow Run](wf-run) zu finden.
+Der aktuellste Build ist immer als ZIP bei [dem aktuellsten Workflow Run][wf-run] zu finden.
 
 Selbst bauen:
 
