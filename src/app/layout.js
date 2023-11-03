@@ -1,15 +1,11 @@
 import { Inter } from 'next/font/google';
 
-// Import Bootstrap CSS
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
-// import "./globals.css"
-
-import { config } from "@fortawesome/fontawesome-svg-core";
+import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 
-import "@/styles/styles.scss"
+import '@/styles/styles.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="de" data-bs-theme="light">
-            <body data-bs-theme="light" className={inter.className}>{children}</body>
+            <body data-bs-theme="light" className={inter.className}>
+                {children}
+            </body>
         </html>
     );
 }
