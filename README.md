@@ -30,11 +30,11 @@ Die kompilierten Dateien sind dann in `out/` zu finden und können direkt über 
 
 ## Vergleiche
 
-| Webseite Alt             |          Webseite Neu           |
-| ------------------------ | :-----------------------------: |
-| ![Alte Ansicht][alt1]    |      ![Neue Ansicht][neu1]      |
-| ![Alte Ansicht][alt-res] |      ![Neue Ansicht][neu2]      |
-|                          | [![](neu-res-vid)](neu-res-vid) |
+| Webseite Alt             |                                      Webseite Neu                                      |
+| ------------------------ | :------------------------------------------------------------------------------------: |
+| ![Alte Ansicht][alt1]    |                                 ![Neue Ansicht][neu1]                                  |
+| ![Alte Ansicht][alt-res] |                                 ![Neue Ansicht][neu2]                                  |
+|                          | https://github.com/kevinriex/notfall.ratingen.de/blob/main/assets/ratingen-neu-res.mov |
 
 ## Development Server
 
