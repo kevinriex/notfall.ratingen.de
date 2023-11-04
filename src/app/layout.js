@@ -7,6 +7,8 @@ config.autoAddCss = false;
 
 import '@/styles/styles.scss';
 
+import Footer from './(components)/Footer';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
         <html lang="de" data-bs-theme="light">
             <body data-bs-theme="light" className={inter.className}>
                 {children}
+                <Footer></Footer>
             </body>
         </html>
     );
