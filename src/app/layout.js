@@ -12,8 +12,8 @@ import Footer from "./(components)/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Stadt Ratingen",
-  description: "",
+    title: 'Stadt Ratingen',
+    description: 'Notfallwebseite der Stadt Ratingen.',
 };
 
 export default function RootLayout({ children }) {
