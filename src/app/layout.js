@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <html lang="de" data-bs-theme="light">
             <body data-bs-theme="light" className={inter.className}>
                 {children}
-                <Footer></Footer>
+                <Footer />
             </body>
         </html>
     );

@@ -1,5 +1,5 @@
-import Impressum from "../(components)/Impressum";
+import Impressum from '../(components)/Impressum';
 
 export default function Home() {
-  return <Impressum />;
+    return <Impressum />;
 }
