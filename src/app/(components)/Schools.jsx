@@ -5,10 +5,10 @@ import Row from "react-bootstrap/Row";
 import Adress from "../(components)/Adress";
 import Header from "../(components)/Header";
 
-const gSchools = [
+const primarySchools = [
   [{
     name: "Albert-Schweitzer-Schule",
-    href: "https://www.ass-ratingen.de/",
+    href: "https://ass-ratingen.de/",
     street: "Bruchstraße 22",
     plz: "40882 Ratingen",
     type: "Grundschule",
@@ -18,7 +18,7 @@ const gSchools = [
   },
   {
     name: "Anne-Frank-Schule",
-    href: "https://www.afs-ratingen.de/startseite/",
+    href: "https://afs-ratingen.de",
     street: "Mülheimer Str. 47",
     plz: "40878 Ratingen",
     type: "Grundschule",
@@ -38,7 +38,7 @@ const gSchools = [
   },],
   [{
     name: "Christian-Morgenstern-Schule",
-    href: "https://www.christian-morgenstern-schule-ratingen.de/",
+    href: "https://christian-morgenstern-schule-ratingen.de/",
     street: "Ulmenstr. 3",
     plz: "40882 Ratingen",
     type: "Grundschule",
@@ -48,7 +48,7 @@ const gSchools = [
   },
   {
     name: "Eduard-Dietrich-Schule",
-    href: "https://www.eduard-dietrich-schule.de/",
+    href: "https://eduard-dietrich-schule.de/",
     street: "Duisburger Straße 14",
     plz: "40885 Ratingen",
     type: "Grundschule",
@@ -68,7 +68,7 @@ const gSchools = [
   },],
   [{
     name: "Gebrüder-Grimm-Schule",
-    href: "https://www.gebrueder-grimm-schule-ratingen.de/",
+    href: "https://gebrueder-grimm-schule-ratingen.de/",
     street: "Karl-Mücher-Weg 17",
     plz: "40878 Ratingen",
     type: "Grundschule",
@@ -118,7 +118,7 @@ const gSchools = [
   },
   {
     name: "Minoritenschule",
-    href: "https://www.minoritenschule.de/",
+    href: "https://minoritenschule.de/",
     street: "Minoritenstraße 12",
     plz: "40878 Ratingen",
     type: "Städt. Kath. Grundschule",
@@ -128,7 +128,7 @@ const gSchools = [
   },],
   [{
     name: "Paul-Maar-Schule",
-    href: "https://www.pms-ratingen.de/",
+    href: "https://pms-ratingen.de/",
     street: "Am Söttgen 15",
     plz: "40880 Ratingen",
     type: "Grundschule",
@@ -138,7 +138,7 @@ const gSchools = [
   },
   {
     name: "Suitbertusschule",
-    href: "https://www.grundschule-suitbertus.de/",
+    href: "https://grundschule-suitbertus.de/",
     street: "Dürerring 3",
     plz: "40878 Ratingen",
     type: "Grundschule",
@@ -148,7 +148,7 @@ const gSchools = [
   },
   {
     name: "Wilhelm-Busch-Schule",
-    href: "https://www.wilhelm-busch-schule-ratingen.de/",
+    href: "https://wilhelm-busch-schule-ratingen.de/",
     street: "Bismarckstr. 16",
     plz: "40883 Ratingen",
     type: "Grundschule",
@@ -157,9 +157,9 @@ const gSchools = [
     district: "Hösel",
   },],]
 
-  const wSchools = [[{
+  const secondarySchools = [[{
     name: "Carl-Friedrich-von-Weizsäcker-Gymnasium",
-    href: "https://www.cfvw-gymnasium.de/",
+    href: "https://cfvw-gymnasium.de/",
     street: "Karl-Mücher-Weg 2",
     plz: "40878 Ratingen",
     type: "Gymnasium",
@@ -169,7 +169,7 @@ const gSchools = [
   },
   {
     name: "Dietrich-Bonhoeffer-Gymnasium",
-    href: "https://www.dbg-ratingen.de/",
+    href: "https://dbg-ratingen.de/",
     street: "Erfurter Straße 30",
     plz: "40880 Ratingen",
     type: "Gymnasium",
@@ -179,7 +179,7 @@ const gSchools = [
   },
   {
     name: "Friedrich-Ebert-Realschule",
-    href: "https://www.friedrich-ebert-realschule.de/",
+    href: "https://friedrich-ebert-realschule.de/",
     street: "Philippstraße 30",
     plz: "40878 Ratingen",
     type: "Realschule",
@@ -189,7 +189,7 @@ const gSchools = [
   },],
   [{
     name: "Käthe-Kollwitz-Schule",
-    href: "https://www.kksreal.de/",
+    href: "https://kksreal.de/",
     street: "Erfurter Straße 40",
     plz: "40880 Ratingen",
     type: "Realschule",
@@ -199,7 +199,7 @@ const gSchools = [
   },
   {
     name: "Käthe-Kollwitz-Schule Dependance Lintorf",
-    href: "https://www.kksreal.de/",
+    href: "https://kksreal.de/",
     street: "Duisburger Straße 112",
     plz: "40885 Ratingen",
     type: "Realschule",
@@ -209,7 +209,7 @@ const gSchools = [
   },
   {
     name: "Kopernikus-Gymnasium",
-    href: "https://www.kgl-ratingen.de/",
+    href: "https://kgl-ratingen.de/",
     street: "Duisburger Straße 112",
     plz: "40885 Ratingen",
     type: "Gymnasium",
@@ -219,7 +219,7 @@ const gSchools = [
   },],
   [{
     name: "Martin-Luther-King-Gesamtschule",
-    href: "https://www.gesamtschule-ratingen.de/",
+    href: "https://gesamtschule-ratingen.de/",
     street: "Erfurter Straße 36",
     plz: "40880 Ratingen",
     type: "Gesamtschule",
@@ -229,7 +229,7 @@ const gSchools = [
   },
   {
     name: "Liebfrauenschule",
-    href: "https://www.liebfrauenschule-ratingen.de/",
+    href: "https://liebfrauenschule-ratingen.de/",
     street: "Schwarzbachstr.17",
     plz: "40878 Ratingen",
     type: "Realschule in privater Trägerschaft",
@@ -239,7 +239,7 @@ const gSchools = [
   },
   {
     name: "Adam-Josef-Cüppers Berufskolleg",
-    href: "https://www.ajc-bk.de/",
+    href: "https://ajc-bk.de/",
     street: "Minoritenstraße 10",
     plz: "40878 Ratingen",
     type: "Berufskolleg in Trägerschaft des Kreises Mettmann",
@@ -253,9 +253,9 @@ export default function SchoolList() {
   return (
     <>
       <Container className="px-4 py-5">
-        <Header h1="Unsere Schulen" />
+        <Header title="Unsere Schulen" />
         <h2 className="pb-2 border-bottom">Grundschulen</h2>
-        {gSchools.map((linkTriple, idx) => (
+        {primarySchools.map((linkTriple, idx) => (
           <Row className="g-4 py-5" key={idx}>
             {linkTriple.map(
               (
@@ -281,7 +281,7 @@ export default function SchoolList() {
         ))}
         <div className="mt-4">
         <h2 className="pb-2 border-bottom mt-4">Weiterführende Schulen</h2>
-        {wSchools.map((linkTriple, idx) => (
+        {secondarySchools.map((linkTriple, idx) => (
           <Row className="g-4 py-5" key={idx}>
             {linkTriple.map(
               (
