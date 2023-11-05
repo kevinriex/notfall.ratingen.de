@@ -1,5 +1,5 @@
-import Schools from '../(components)/Schools';
+import Schools from "../(components)/Schools";
 
 export default function SchoolsPage() {
-    return <Schools mastername="Unsere Schulen"/>;
+    return <Schools mastername="Unsere Schulen" />;
 }

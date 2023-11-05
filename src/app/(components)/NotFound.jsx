@@ -14,10 +14,10 @@ export default function NotFound() {
                     data-bs-theme="light"
                     className="display-5 fw-bold text-body-emphasis"
                 >
-          Seite nicht gefunden
+                    Seite nicht gefunden
                 </h1>
                 <Link href="/" className="btn btn-primary mt-5">
-          Zur Startseite
+                    Zur Startseite
                 </Link>
             </div>
         </>

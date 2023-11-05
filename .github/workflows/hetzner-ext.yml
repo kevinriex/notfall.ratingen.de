@@ -10,7 +10,7 @@ on:
             - extension
 
 concurrency:
-    group: 'hetzner-extension'
+    group: "hetzner-extension"
     cancel-in-progress: false
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: 20
-                  cache: 'npm'
+                  cache: "npm"
 
             - name: npm clean install
               run: npm ci
