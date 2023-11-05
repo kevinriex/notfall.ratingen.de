@@ -14,7 +14,7 @@ concurrency:
     cancel-in-progress: false
 
 jobs:
-    Deploy-Production-Hetzner:
+    Deploy-Extension-Hetzner:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
