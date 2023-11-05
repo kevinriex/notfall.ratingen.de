@@ -33,11 +33,9 @@ export default function Adress({
             <br />
             <FontAwesomeIcon icon={faPhone} />{" "}
             <a href={`tel:${tel}`}>{tel}</a>
-            <br />
-            <FontAwesomeIcon icon={faAt} />{" "}
-            <a href={`mailto:${email}`}>{email}</a>
+            {email ? (<><br /><FontAwesomeIcon icon={faAt} />{" "}<a href={`mailto:${email}`}>{email}</a></>) : ''}
           </div>
-          <a href={href} className="btn btn-primary">
+          {href ? <a href={href} className="btn btn-primary">
             {
               new RegExp(
                 /(?:(https:|http:)\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
@@ -45,7 +43,8 @@ export default function Adress({
               ).exec(href).groups.fqdn
             }{" "}
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          </a>
+        </a>
+          :''}
         </div>
       </div>
   );

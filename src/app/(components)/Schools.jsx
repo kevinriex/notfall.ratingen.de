@@ -78,7 +78,6 @@ const primarySchools = [
   },
   {
     name: "Heinrich-Schmitz-Schule",
-    href: "https://ratingen.de/",
     street: "Duisburger Straße 112",
     plz: "40885 Ratingen",
     type: "Grundschule",
@@ -262,9 +261,9 @@ export default function SchoolList() {
                 { name, href, street, plz, type, tel, email, district },
                 idx
               ) => (
-                <Col key={idx} className='col-sm-8 col-lg-4'>
+                <Col key={name} className='col-sm-8 col-lg-4'>
                   <Adress
-                    key={idx}
+                    key={`${plz}${idx}`}
                     name={name}
                     href={href}
                     street={street}
@@ -282,15 +281,15 @@ export default function SchoolList() {
         <div className="mt-4">
         <h2 className="pb-2 border-bottom mt-4">Weiterführende Schulen</h2>
         {secondarySchools.map((linkTriple, idx) => (
-          <Row className="g-4 py-5" key={idx}>
+          <Row className="g-4 py-5" key={100 + idx}>
             {linkTriple.map(
               (
                 { name, href, street, plz, type, tel, email, district },
                 idx
               ) => (
-                <Col key={idx} className='col-sm-8 col-lg-4'>
+                <Col key={name} className='col-sm-8 col-lg-4'>
                   <Adress
-                    key={idx}
+                    key={`${plz}${idx}`}
                     name={name}
                     href={href}
                     street={street}
