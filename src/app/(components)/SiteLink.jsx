@@ -20,7 +20,7 @@ export default function SiteLink({ name, href, desc, icon, internal }) {
             <div>
                 <h3 className="fs-4 text-body-emphasis">{name}</h3>
                 <p>{desc}</p>
-                <a href={href} className="btn btn-primary">
+                <a href={href} className="btn btn-primary text-nowrap">
                        {btntext}{' '}
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>
