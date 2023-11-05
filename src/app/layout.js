@@ -9,6 +9,7 @@ import "@/styles/styles.scss";
 
 import Footer from "./(components)/Footer";
 import LoadingAnimation from "./(components)/LoadingAnimation";
+import MainAnimation from "./(components)/MainAnimation"
 
 const inter = Inter({ subsets: ["latin"] });
 
