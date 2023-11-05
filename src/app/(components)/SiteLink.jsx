@@ -1,5 +1,5 @@
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SiteLink({ name, href, desc, icon }) {
     return (
@@ -14,9 +14,9 @@ export default function SiteLink({ name, href, desc, icon }) {
                     {
                         new RegExp(
                             /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
-                            'gm'
+                            "gm"
                         ).exec(href).groups.fqdn
-                    }{' '}
+                    }{" "}
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>
             </div>
