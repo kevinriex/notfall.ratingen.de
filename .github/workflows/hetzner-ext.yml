@@ -1,4 +1,4 @@
-name: Hetzner Production Deployment
+name: Hetzner Extension Deployment
 env:
     SERVER_HOST: ${{ secrets.SERVER_HOST }}
     SERVER_PORT: ${{ secrets.SERVER_PORT }}
