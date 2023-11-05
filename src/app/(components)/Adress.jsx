@@ -1,7 +1,7 @@
 import {
   faArrowUpRightFromSquare,
   faPhone,
-  faRoad,
+  faGraduationCap,
   faAt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,25 +17,9 @@ export default function Adress({
   district,
 }) {
   return (
-    //     <>
-    //     <div className="col d-flex align-items-start">
-    //       <div className="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-    //         {faRoad}
-    //       </div>
-    //     {name}
-    //     {href}
-    //     {street}
-    //     {plz}
-    //     {type}
-    //     {tel}
-    //     {email}
-    //     {district}
-    //     </div>
-    //   </>
-    <>
       <div className="col d-flex align-items-start">
         <div className="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <FontAwesomeIcon icon={faPhone} />
+          <FontAwesomeIcon icon={faGraduationCap} />
         </div>
         <div>
           <h3 className="fs-4 text-body-emphasis">{name}</h3>
@@ -56,7 +40,7 @@ export default function Adress({
           <a href={href} className="btn btn-primary">
             {
               new RegExp(
-                /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
+                /(?:(https:|http:)\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
                 "gm"
               ).exec(href).groups.fqdn
             }{" "}
@@ -64,6 +48,5 @@ export default function Adress({
           </a>
         </div>
       </div>
-    </>
   );
 }
