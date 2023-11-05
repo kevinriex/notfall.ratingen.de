@@ -92,7 +92,6 @@ const LinkSammlung = [
       href: "/schulen",
       desc: "Hier finden Sie alle Schulen",
       icon: <FontAwesomeIcon icon={faGraduationCap} />,
-      internal: true
     },
     {
       name: "Kreis Mettmann",
@@ -109,7 +108,7 @@ export default function SideLinkBar({ mastername }) {
       <h2 className="pb-2 border-bottom">{mastername}</h2>
       {LinkSammlung.map((linkTriple, idx) => (
         <Row className="g-4 py-5" key={idx}>
-          {linkTriple.map(({ name, href, desc, icon, internal }, idx) => (
+          {linkTriple.map(({ name, href, desc, icon }, idx) => (
             <Col key={name} className='col-sm-8 col-lg-4'>
               <SiteLink
                 key={`${name}${idx}`}
@@ -117,7 +116,6 @@ export default function SideLinkBar({ mastername }) {
                 href={href}
                 desc={desc}
                 icon={icon}
-                internal={internal}
               />
             </Col>
           ))}
