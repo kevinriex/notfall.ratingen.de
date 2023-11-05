@@ -1,10 +1,10 @@
 import {
+    faArrowUpRightFromSquare,
     faAt,
     faGraduationCap,
-    faPhone
+    faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import OwnLink from "./OwnLink";
 
 export default function School({
     name,
@@ -32,19 +32,27 @@ export default function School({
                     {plz}
                     <br />
                     <FontAwesomeIcon icon={faPhone} />{" "}
-                    <OwnLink href={`tel:${tel}`} />
+                    <a href={`tel:${tel}`}>{tel}</a>
                     {email ? (
                         <>
                             <br />
                             <FontAwesomeIcon icon={faAt} />{" "}
-                            <OwnLink href={`mailto:${email}`} />
+                            <a href={`mailto:${email}`}>{email}</a>
                         </>
                     ) : (
                         ""
                     )}
                 </div>
                 {href ? (
-                    <OwnLink href={href} button={true}/>
+                    <a href={href} className="btn btn-primary">
+                        {
+                            new RegExp(
+                                /(?:(https:|http:)\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
+                                "gm"
+                            ).exec(href).groups.fqdn
+                        }{" "}
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
                 ) : (
                     ""
                 )}
