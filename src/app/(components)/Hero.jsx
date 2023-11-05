@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero({h1}) {
     return (
         <>
             <div className="px-4 py-5 my-5 text-center" data-bs-theme="light">
@@ -12,11 +12,11 @@ export default function Hero() {
                     data-bs-theme="light"
                     className="display-5 fw-bold text-body-emphasis"
                 >
-                    Stadt Ratingen
+                    {h1}
                 </h1>
                 <div className="col-lg-8 mx-auto">
                     <p className="lead mb-4 mt-4">
-                        Liebe Besucherinnen und Besucher der Internetseite der
+                    Liebe Besucherinnen und Besucher der Internetseite der
                         Stadt Ratingen,
                         <br />
                         <br />

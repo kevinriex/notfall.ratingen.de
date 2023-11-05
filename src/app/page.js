@@ -4,7 +4,7 @@ import SideLinkBar from './(components)/SideLinkBar';
 export default function Home() {
     return (
         <>
-            <Hero />
+            <Hero h1="Stadt Ratingen"/>
             <SideLinkBar mastername="Ihre Dienstleistungen" />
         </>
     );
