@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Impressum() {
     return (
         <div className="px-4 py-5 my-5 container">

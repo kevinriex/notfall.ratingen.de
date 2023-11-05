@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
     title: "Stadt Ratingen",
-    description: "",
+    description: "Notfallwebseite der Stadt Ratingen.",
 };
 
 export default function RootLayout({ children }) {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <html lang="de" data-bs-theme="light">
             <body data-bs-theme="light" className={inter.className}>
                 {children}
-                <Footer></Footer>
+                <Footer />
             </body>
         </html>
     );

@@ -81,33 +81,23 @@ const LinkSammlung = [
 
 export default function SideLinkBar({ mastername }) {
     return (
-        <>
-            {/* <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">{mastername}</h2>
-    <div class={`row g-4 py-5 row-cols-${rows} row-cols-lg-${cols}`}>
-      <div class="col d-flex align-items-start">
-      {Links.map(({ name, href, desc, icon }, idx) => <SiteLink key={idx} name={name} href={href} desc={desc} icon={icon}/>)}
-        </div>
-      </div>
-  </div> */}
-            <Container className="px-4 py-5">
-                <h2 className="pb-2 border-bottom">{mastername}</h2>
-                {LinkSammlung.map((linkTriple, idx) => (
-                    <Row className="g-4 py-5" key={idx}>
-                        {linkTriple.map(({ name, href, desc, icon }, idx) => (
-                            <Col key={idx}>
-                                <SiteLink
-                                    key={idx}
-                                    name={name}
-                                    href={href}
-                                    desc={desc}
-                                    icon={icon}
-                                />
-                            </Col>
-                        ))}
-                    </Row>
-                ))}
-            </Container>
-        </>
+        <Container className="px-4 py-5">
+            <h2 className="pb-2 border-bottom">{mastername}</h2>
+            {LinkSammlung.map((linkTriple, idx) => (
+                <Row className="g-4 py-5" key={idx}>
+                    {linkTriple.map(({ name, href, desc, icon }, idx) => (
+                        <Col key={idx}>
+                            <SiteLink
+                                key={idx}
+                                name={name}
+                                href={href}
+                                desc={desc}
+                                icon={icon}
+                            />
+                        </Col>
+                    ))}
+                </Row>
+            ))}
+        </Container>
     );
 }
