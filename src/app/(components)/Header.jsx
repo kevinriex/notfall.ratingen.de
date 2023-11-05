@@ -1,4 +1,4 @@
-export default function Header({h1}) {
+export default function Header({ title }) {
     return (
         <div className="text-center">
         <img
@@ -11,7 +11,7 @@ export default function Header({h1}) {
                     data-bs-theme="light"
                     className="display-5 fw-bold text-body-emphasis"
                 >
-                    {h1}
+                    {title}
                 </h1>
     </div>
     )
