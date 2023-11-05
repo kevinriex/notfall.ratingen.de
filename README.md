@@ -1,5 +1,6 @@
 Eine Notlösung für die Stadt Ratingen um eine informative Landing Page während des Cyberangriffs auf die SIT zu haben.
-Eine aktuelle Version läuft über [Vercel](https://vercel.com) auf https://hs.kcvw.de und https://hochschule-ratingen.de.
+Eine aktuelle Produktions-Version läuft auf https://notfall.jr-rtg.de.
+Eine aktuelle Development-Version läuft über [Vercel](https://vercel.com) auf https://hs.kcvw.de und https://hochschule-ratingen.de.
 
 **Design**: Kevin Yven Riexinger
 
