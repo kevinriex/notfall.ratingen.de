@@ -9,7 +9,6 @@ import "@/styles/styles.scss";
 
 import Footer from "./(components)/Footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
