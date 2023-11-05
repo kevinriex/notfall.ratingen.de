@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body data-bs-theme="light" className={inter.className}>
         <LoadingAnimation />
 
-        <MainAnimation children={children} />
+        <MainAnimation>{children}</MainAnimation>
         <Footer />
       </body>
     </html>
