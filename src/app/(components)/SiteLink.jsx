@@ -14,8 +14,7 @@ export default function SiteLink({ name, href, desc, icon }) {
                     {new RegExp(
                         /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
                         "gm"
-                    ).exec(href)?.groups?.fqdn ?? "Hier geht's lang.."}
-                    {" "}
+                    ).exec(href)?.groups?.fqdn ?? "Hier geht's lang.."}{" "}
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>
             </div>

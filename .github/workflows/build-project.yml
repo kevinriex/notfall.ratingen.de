@@ -10,7 +10,7 @@ permissions:
     id-token: write
 
 concurrency:
-    group: 'build'
+    group: "build"
     cancel-in-progress: false
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v3
               with:
-                  node-version: 'lts/*'
+                  node-version: "lts/*"
                   cache: npm
             - name: Restore Cache
               uses: actions/cache@v3

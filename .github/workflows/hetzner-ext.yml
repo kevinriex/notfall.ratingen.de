@@ -40,6 +40,6 @@ jobs:
                   username: ${{ secrets.SERVER_USER }}
                   password: ${{ secrets.SERVER_PASS }}
                   key: ${{ secrets.SERVER_KEY }}
-                  source: './out'
-                  target: 'ext/'
+                  source: "./out"
+                  target: "ext/"
                   strip_components: 2 # this is important
