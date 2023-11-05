@@ -8,8 +8,7 @@ config.autoAddCss = false;
 import "@/styles/styles.scss";
 
 import Footer from "./(components)/Footer";
-import LoadingAnimation from "./(components)/LoadingAnimation";
-import MainAnimation from "./(components)/MainAnimation"
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,9 +29,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="/wappen.jpg" />
       </head>
       <body data-bs-theme="light" className={inter.className}>
-        <LoadingAnimation />
-
-        <MainAnimation>{children}</MainAnimation>
+       {children}
         <Footer />
       </body>
     </html>
