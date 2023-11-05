@@ -1,4 +1,4 @@
-name: Hetzner Production Deployment
+name: Hetzner Extension Deployment
 env:
     SERVER_HOST: ${{ secrets.SERVER_HOST }}
     SERVER_PORT: ${{ secrets.SERVER_PORT }}
@@ -7,14 +7,14 @@ env:
 on:
     push:
         branches:
-            - main
+            - extension
 
 concurrency:
-    group: "hetzner-prod"
+    group: "hetzner-extension"
     cancel-in-progress: false
 
 jobs:
-    Deploy-Production-Hetzner:
+    Deploy-Extension-Hetzner:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -41,5 +41,5 @@ jobs:
                   password: ${{ secrets.SERVER_PASS }}
                   key: ${{ secrets.SERVER_KEY }}
                   source: "./out"
-                  target: "public/"
+                  target: "ext/"
                   strip_components: 2 # this is important

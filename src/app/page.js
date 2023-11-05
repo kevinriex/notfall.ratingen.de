@@ -1,11 +1,11 @@
 import Hero from "./(components)/Hero";
-import SideLinkBar from "./(components)/SideLinkBar";
+import Services from "./(components)/Services";
 
 export default function Home() {
     return (
         <>
-            <Hero />
-            <SideLinkBar mastername="Ihre Dienstleistungen" />
+            <Hero title="Stadt Ratingen" />
+            <Services mastername="Ihre Dienstleistungen" />
         </>
     );
 }

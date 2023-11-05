@@ -1,0 +1,38 @@
+version: 2
+updates:
+    - package-ecosystem: "npm"
+      directory: "/" # Location of package manifests
+      schedule:
+          interval: "daily"
+      assignees:
+          - "kdev"
+          - "kevinriex"
+      commit-message:
+          prefix: "chore"
+          include: "scope"
+      reviewers:
+          - "kdev"
+          - "kevinriex"
+      open-pull-requests-limit: 10
+      target-branch: "main"
+      groups:
+          fortawesome:
+              patterns:
+                  - "@fortawesome/*"
+              exclude-patterns:
+                  - "@fortawesome/react"
+
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      assignees:
+          - "kdev"
+          - "kevinriex"
+      commit-message:
+          prefix: "chore"
+          include: "scope"
+      reviewers:
+          - "kdev"
+          - "kevinriex"
+      target-branch: "main"

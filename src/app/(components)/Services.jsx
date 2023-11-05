@@ -1,9 +1,12 @@
 "use client";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import {
     faBook,
     faCalendarDays,
+    faChild,
     faEarthEurope,
+    faGraduationCap,
     faLandmark,
     faSchool,
     faTrash,
@@ -14,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import SiteLink from "../(components)/SiteLink";
+import ServiceLink from "../(components)/ServiceLink";
 
 const LinkSammlung = [
     [
@@ -77,18 +80,38 @@ const LinkSammlung = [
             icon: <FontAwesomeIcon icon={faFacebook} />,
         },
     ],
+    [
+        {
+            name: "Kitas",
+            href: "https://kita-planer.kdo.de/ratingen-elternportal/elternportal/de/",
+            desc: "Hier finden sie alle stätischen Kindertagesstätten.",
+            icon: <FontAwesomeIcon icon={faChild} />,
+        },
+        {
+            name: "Schulen",
+            href: "/schulen",
+            desc: "Hier finden Sie alle Schulen",
+            icon: <FontAwesomeIcon icon={faGraduationCap} />,
+        },
+        {
+            name: "Kreis Mettmann",
+            href: "https://kreis-mettmann.de",
+            desc: "Die Website des Kreises Mettmann.",
+            icon: <FontAwesomeIcon icon={faCircle} />,
+        },
+    ],
 ];
 
-export default function SideLinkBar({ mastername }) {
+export default function Services({ mastername }) {
     return (
         <Container className="px-4 py-5">
             <h2 className="pb-2 border-bottom">{mastername}</h2>
             {LinkSammlung.map((linkTriple, idx) => (
                 <Row className="g-4 py-5" key={idx}>
                     {linkTriple.map(({ name, href, desc, icon }, idx) => (
-                        <Col key={idx}>
-                            <SiteLink
-                                key={idx}
+                        <Col key={name} className="col-sm-8 col-lg-4">
+                            <ServiceLink
+                                key={`${name}${idx}`}
                                 name={name}
                                 href={href}
                                 desc={desc}

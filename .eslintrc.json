@@ -1,8 +1,4 @@
 {
     "extends": "next/core-web-vitals",
-    "plugins": ["@stylistic"],
-    "rules": {
-        "@stylistic/indent": ["warn", 4],
-        "@stylistic/quotes": ["warn", "double"]
-    }
+    "plugins": ["prettier"]
 }
