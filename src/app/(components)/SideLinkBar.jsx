@@ -110,7 +110,7 @@ export default function SideLinkBar({ mastername }) {
       {LinkSammlung.map((linkTriple, idx) => (
         <Row className="g-4 py-5" key={idx}>
           {linkTriple.map(({ name, href, desc, icon, internal }, idx) => (
-            <Col key={idx}>
+            <Col key={idx} className='col-sm-8 col-lg-4'>
               <SiteLink
                 key={idx}
                 name={name}

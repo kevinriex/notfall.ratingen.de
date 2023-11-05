@@ -262,7 +262,7 @@ export default function SchoolList() {
                 { name, href, street, plz, type, tel, email, district },
                 idx
               ) => (
-                <Col key={idx}>
+                <Col key={idx} className='col-sm-8 col-lg-4'>
                   <Adress
                     key={idx}
                     name={name}
@@ -288,7 +288,7 @@ export default function SchoolList() {
                 { name, href, street, plz, type, tel, email, district },
                 idx
               ) => (
-                <Col key={idx}>
+                <Col key={idx} className='col-sm-8 col-lg-4'>
                   <Adress
                     key={idx}
                     name={name}
