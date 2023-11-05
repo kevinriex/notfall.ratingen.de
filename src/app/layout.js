@@ -1,3 +1,4 @@
+"use client";
 import { Inter } from "next/font/google";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -5,14 +6,14 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-
 import "@/styles/styles.scss";
 
-
 import Footer from "./(components)/Footer";
-import LoadingAnimation from "./(components)/LoadingAnimation"
+import LoadingAnimation from "./(components)/LoadingAnimation";
+import { MotionConfig } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
+import { motion } from "framer-motion";
 
 export const metadata = {
   title: "Stadt Ratingen",
@@ -31,8 +32,16 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="/wappen.jpg" />
       </head>
       <body data-bs-theme="light" className={inter.className}>
-       <LoadingAnimation />
-        {children}
+        <LoadingAnimation />
+        <motion.div
+          transition={{ duration: 1, delay: 1 }}
+          initial={{ opacity: 0}}
+          animate={{
+            opacity: 1,
+          }}
+        >
+          {children}
+        </motion.div>
         <Footer />
       </body>
     </html>
