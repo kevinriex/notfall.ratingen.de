@@ -16,7 +16,7 @@ export default function Impressum() {
                 <p>
                     Telefon: <a href="tel:004921025501001">02102 550-1001</a>
                     <br />
-                    E-Mail:{' '}
+                    E-Mail:{" "}
                     <a href="mailto:datenschutz@ratingen.de">
                         datenschutz@ratingen.de
                     </a>
@@ -95,12 +95,12 @@ export default function Impressum() {
                 </p>
                 <h3>Gestaltung &amp; Umsetzung</h3>
 
-        <ul>
-          <li><strong>Design:</strong> Kevin Yven Riexinger</li>
-          <li><strong>Infrastruktur:</strong> Konstantin Westhoff</li>
-          <li><strong>Code:</strong> Beide :)</li>
-        </ul>
-      </div>
-    </div>
-  );
+                <ul>
+                    <li><strong>Design:</strong> Kevin Yven Riexinger</li>
+                    <li><strong>Infrastruktur:</strong> Konstantin Westhoff</li>
+                    <li><strong>Code:</strong> Beide :)</li>
+                </ul>
+            </div>
+        </div>
+    );
 }

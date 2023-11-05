@@ -1,19 +1,19 @@
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
 
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
-import { config } from '@fortawesome/fontawesome-svg-core';
+import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
-import '@/styles/styles.scss';
+import "@/styles/styles.scss";
 
-import Footer from './(components)/Footer';
+import Footer from "./(components)/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: 'Stadt Ratingen',
-    description: '',
+    title: "Stadt Ratingen",
+    description: "",
 };
 
 export default function RootLayout({ children }) {

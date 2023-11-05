@@ -20,6 +20,7 @@
         "react-dom": "^18"
     },
     "devDependencies": {
+        "@stylistic/eslint-plugin": "^1.0.0",
         "eslint": "^8",
         "eslint-config-next": "14.0.1",
         "sass": "^1.64.1"

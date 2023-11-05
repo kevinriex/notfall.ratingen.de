@@ -1,5 +1,5 @@
-import Hero from './(components)/Hero';
-import SideLinkBar from './(components)/SideLinkBar';
+import Hero from "./(components)/Hero";
+import SideLinkBar from "./(components)/SideLinkBar";
 
 export default function Home() {
     return (
@@ -9,3 +9,4 @@ export default function Home() {
         </>
     );
 }
+s
