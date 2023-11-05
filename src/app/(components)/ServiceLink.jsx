@@ -1,7 +1,7 @@
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function SiteLink({ name, href, desc, icon }) {
+export default function ServiceLink({ name, href, desc, icon }) {
     return (
         <div className="col d-flex align-items-start">
             <div className="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">

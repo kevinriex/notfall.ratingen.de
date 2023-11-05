@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import SiteLink from "../(components)/SiteLink";
+import ServiceLink from "../(components)/ServiceLink";
 
 const LinkSammlung = [
     [
@@ -102,7 +102,7 @@ const LinkSammlung = [
     ],
 ];
 
-export default function SideLinkBar({ mastername }) {
+export default function Services({ mastername }) {
     return (
         <Container className="px-4 py-5">
             <h2 className="pb-2 border-bottom">{mastername}</h2>
@@ -110,7 +110,7 @@ export default function SideLinkBar({ mastername }) {
                 <Row className="g-4 py-5" key={idx}>
                     {linkTriple.map(({ name, href, desc, icon }, idx) => (
                         <Col key={name} className="col-sm-8 col-lg-4">
-                            <SiteLink
+                            <ServiceLink
                                 key={`${name}${idx}`}
                                 name={name}
                                 href={href}

@@ -1,19 +1,10 @@
-export default function Hero({ h1 }) {
+import Header from "./Header";
+
+export default function Hero({ title }) {
     return (
         <>
             <div className="px-4 py-5 my-5 text-center" data-bs-theme="light">
-                <img
-                    className="d-block mx-auto mb-4"
-                    src="/wappen.svg"
-                    alt="Das Wappen der Stadt Ratingen"
-                    height="250em"
-                />
-                <h1
-                    data-bs-theme="light"
-                    className="display-5 fw-bold text-body-emphasis"
-                >
-                    {h1}
-                </h1>
+                <Header title={title} />
                 <div className="col-lg-8 mx-auto">
                     <p className="lead mb-4 mt-4">
                         Liebe Besucherinnen und Besucher der Internetseite der
