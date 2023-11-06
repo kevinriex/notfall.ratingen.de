@@ -1,3 +1,5 @@
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ImpressumPage() {
     return (
         <div className="px-4 py-5 my-5 container">
@@ -44,11 +46,12 @@ export default function ImpressumPage() {
                 Sitz unseres Unternehmens befindet. Der folgende Link stellt
                 eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten
                 bereit:{" "}
-                <a
-                    href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
-                    target="_blank"
-                >
-                    https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
+                <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" className="text-nowrap">
+                    {new RegExp(
+                        /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
+                        "gm"
+                    ).exec("https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html")?.groups?.fqdn ?? "Hier geht's lang.."}{" "}
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>
                 .
             </p>
@@ -159,8 +162,12 @@ export default function ImpressumPage() {
                 Standardvertragsklauseln der EU-Kommission gemäß
                 Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine
                 Kopie dieser Standardvertragsklauseln können Sie unter{" "}
-                <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE">
-                    https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE
+                <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE/" className="text-nowrap">
+                    {new RegExp(
+                        /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com|eu)))/,
+                        "gm"
+                    ).exec("https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE/")?.groups?.fqdn ?? "Hier geht's lang.."}{" "}
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>{" "}
                 einsehen.
             </p>
@@ -175,17 +182,6 @@ export default function ImpressumPage() {
                 deren Folgen für Sie wir nicht kennen, auf die wir keinen
                 Einfluss haben und von denen Sie unter Umständen keine Kenntnis
                 erlangen) bestehen können.
-            </p>
-            <h3>Speicherdauer</h3>
-            <p>
-                Die konkrete Speicherdauer der verarbeiteten Daten ist nicht
-                durch uns beeinflussbar, sondern wird von Fonticons, Inc.
-                bestimmt. Weitere Hinweise finden Sie in der
-                Datenschutzerklärung für Font Awesome CDN:{" "}
-                <a href="https://cdn.fontawesome.com/privacy">
-                    https://cdn.fontawesome.com/privacy
-                </a>
-                .
             </p>
         </div>
     );
