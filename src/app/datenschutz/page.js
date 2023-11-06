@@ -1,6 +1,6 @@
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export default function ImpressumPage() {
+"use client";
+import OwnLink from "../(components)/OwnLink";
+export default function DatenschutzPage() {
     return (
         <div className="px-4 py-5 my-5 container">
             <h1 className="py-5">Datenschutzerklärung</h1>
@@ -46,13 +46,7 @@ export default function ImpressumPage() {
                 Sitz unseres Unternehmens befindet. Der folgende Link stellt
                 eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten
                 bereit:{" "}
-                <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" className="text-nowrap">
-                    {new RegExp(
-                        /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
-                        "gm"
-                    ).exec("https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html")?.groups?.fqdn ?? "Hier geht's lang.."}{" "}
-                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </a>
+                <OwnLink href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" arrow={true}/>
                 .
             </p>
             <h3>Recht auf Datenübertragbarkeit</h3>
@@ -162,13 +156,7 @@ export default function ImpressumPage() {
                 Standardvertragsklauseln der EU-Kommission gemäß
                 Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine
                 Kopie dieser Standardvertragsklauseln können Sie unter{" "}
-                <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE/" className="text-nowrap">
-                    {new RegExp(
-                        /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com|eu)))/,
-                        "gm"
-                    ).exec("https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE/")?.groups?.fqdn ?? "Hier geht's lang.."}{" "}
-                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </a>{" "}
+                <OwnLink href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE/" arrow={true}/>{" "}
                 einsehen.
             </p>
             <p>
