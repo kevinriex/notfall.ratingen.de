@@ -4,6 +4,7 @@ env:
     SERVER_PORT: ${{ secrets.SERVER_PORT }}
     SERVER_USER: ${{ secrets.SERVER_USER }}
     SERVER_PASS: ${{ secrets.SERVER_PASS }}
+    SERVER_PHRASE: ${{ secrets.SERVER_PHRASE }}
 on:
     push:
         branches:
