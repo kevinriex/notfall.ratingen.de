@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import ServiceLink from "../(components)/ServiceLink";
+import ServiceLink from "./ServiceLink";
 
 const LinkSammlung = [
     [

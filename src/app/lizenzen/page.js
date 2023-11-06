@@ -1,83 +1,13 @@
-"use client";
-const ListLicenses = [
-    {
-        name: "@fortawesome/fontawesome-svg-core",
-        link: "git+https://github.com/FortAwesome/Font-Awesome.git",
-        comment: "6.4.2",
-        installedVersion: "6.4.2",
-        author: "The Font Awesome Team (https://github.com/orgs/FortAwesome/people)",
-    },
-    {
-        name: "@fortawesome/free-brands-svg-icons",
-        link: "git+https://github.com/FortAwesome/Font-Awesome.git",
-        comment: "6.4.2",
-        installedVersion: "6.4.2",
-        author: "The Font Awesome Team (https://github.com/orgs/FortAwesome/people)",
-    },
-    {
-        name: "@fortawesome/free-regular-svg-icons",
-        link: "git+https://github.com/FortAwesome/Font-Awesome.git",
-        comment: "6.4.2",
-        installedVersion: "6.4.2",
-        author: "The Font Awesome Team (https://github.com/orgs/FortAwesome/people)",
-    },
-    {
-        name: "@fortawesome/free-solid-svg-icons",
-        link: "git+https://github.com/FortAwesome/Font-Awesome.git",
-        comment: "6.4.2",
-        installedVersion: "6.4.2",
-        author: "The Font Awesome Team (https://github.com/orgs/FortAwesome/people)",
-    },
-    {
-        name: "@fortawesome/react-fontawesome",
-        link: "git+https://github.com/FortAwesome/react-fontawesome.git",
-        comment: "0.2.0",
-        installedVersion: "0.2.0",
-        author: "n/a",
-    },
-    {
-        name: "bootstrap",
-        link: "git+https://github.com/twbs/bootstrap.git",
-        comment: "5.3.2",
-        installedVersion: "5.3.2",
-        author: "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
-    },
-    {
-        name: "next",
-        link: "git+https://github.com/vercel/next.js.git",
-        comment: "14.0.1",
-        installedVersion: "14.0.1",
-        author: "n/a",
-    },
-    {
-        name: "react",
-        link: "git+https://github.com/facebook/react.git",
-        comment: "18.2.0",
-        installedVersion: "18.2.0",
-        author: "n/a",
-    },
-    {
-        name: "react-bootstrap",
-        link: "git+https://github.com/react-bootstrap/react-bootstrap.git",
-        comment: "2.9.1",
-        installedVersion: "2.9.1",
-        author: "Stephen J. Collings stevoland@gmail.com",
-    },
-    {
-        name: "react-dom",
-        link: "git+https://github.com/facebook/react.git",
-        comment: "18.2.0",
-        installedVersion: "18.2.0",
-        author: "n/a",
-    },
-];
 import {
-  faArrowUpRightFromSquare
+    faArrowUpRightFromSquare
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { promises as fs } from "fs";
 import Container from "react-bootstrap/Container";
 
-export default function Licenses() {
+export default async function Licenses() {
+    const file = await fs.readFile(process.cwd() + "/public/licenses.json", "utf-8")
+    const ListLicenses = JSON.parse(file);
     return (
         <Container className="px-4 py-5 vw-100 text-center d-flex align-items-center justify-content-center flex-column">
             <h1>Lizenzen</h1>

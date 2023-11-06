@@ -5,10 +5,10 @@
     "scripts": {
         "dev": "next dev --turbo",
         "build": "next build",
-        "build-with-license": "npm run dep:gen && next build",
+        "prebuild": "npm run dep:gen",
         "start": "next start",
         "lint": "next lint",
-        "dep:gen": "license-report --only=prod --output=json --config license-report-config.json > static/licenses.json"
+        "dep:gen": "license-report --only=prod --output=json --config license-report-config.json > public/licenses.json"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -26,6 +26,7 @@
         "eslint": "^8",
         "eslint-config-next": "14.0.1",
         "eslint-config-prettier": "^9.0.0",
+        "license-report": "^6.5.0",
         "prettier": "3.0.3",
         "sass": "^1.64.1"
     },
