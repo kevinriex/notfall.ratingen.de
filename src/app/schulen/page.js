@@ -1,9 +1,9 @@
 "use client";
+import Header from "@/app/components/Header";
+import School from "@/app/components/School";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Header from "../(components)/Header";
-import School from "../(components)/School";
 
 const primarySchools = [
     [

@@ -1,25 +1,24 @@
-name: Hetzner Production Deployment
+name: Hetzner Development Deployment
 env:
     SERVER_HOST: ${{ secrets.SERVER_HOST }}
     SERVER_PORT: ${{ secrets.SERVER_PORT }}
     SERVER_USER: ${{ secrets.SERVER_USER }}
     SERVER_PASS: ${{ secrets.SERVER_PASS }}
-    SERVER_PHRASE: ${{ secrets.SERVER_PHRASE }}
 on:
     push:
         branches:
-            - main
+            - dev
 
 concurrency:
-    group: "hetzner-prod"
+    group: "hetzner-development"
     cancel-in-progress: false
 
 jobs:
-    Deploy-Production-Hetzner:
+    Deploy-Development-Hetzner:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v3
 
             - name: Node Setup
               uses: actions/setup-node@v4
@@ -41,7 +40,6 @@ jobs:
                   username: ${{ secrets.SERVER_USER }}
                   password: ${{ secrets.SERVER_PASS }}
                   #key: ${{ secrets.SERVER_KEY }}
-                  #passphrase: ${{ secrets.SERVER_PHRASE }}
                   source: "./out"
-                  target: "public/"
+                  target: "dev/"
                   strip_components: 2 # this is important

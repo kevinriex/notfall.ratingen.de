@@ -7,7 +7,7 @@ config.autoAddCss = false;
 
 import "@/styles/styles.scss";
 
-import Footer from "./(components)/Footer";
+import Footer from "@/app/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
