@@ -4,6 +4,7 @@ env:
     SERVER_PORT: ${{ secrets.SERVER_PORT }}
     SERVER_USER: ${{ secrets.SERVER_USER }}
     SERVER_PASS: ${{ secrets.SERVER_PASS }}
+    SERVER_PHRASE: ${{ secrets.SERVER_PHRASE }}
 on:
     push:
         branches:
@@ -40,6 +41,7 @@ jobs:
                   username: ${{ secrets.SERVER_USER }}
                   password: ${{ secrets.SERVER_PASS }}
                   key: ${{ secrets.SERVER_KEY }}
+                  passphrase: ${{ secrets.SERVER_PHRASE }}
                   source: "./out"
                   target: "public/"
                   strip_components: 2 # this is important
