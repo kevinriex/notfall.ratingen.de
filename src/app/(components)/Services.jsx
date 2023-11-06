@@ -76,7 +76,7 @@ const LinkSammlung = [
         {
             name: "Aktuelle Informationen",
             href: "https://facebook.com/DeinRatingen/",
-            desc: "Hier gelangen Sie zur Facebook-Seite „Dein Ratingen“.",
+            desc: <>Hier gelangen Sie zur Facebook-Seite <em>„Dein Ratingen“</em>.</>,
             icon: <FontAwesomeIcon icon={faFacebook} />,
         },
     ],
