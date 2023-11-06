@@ -26,7 +26,6 @@ export default function School({
                 <div className="mb-2">
                     {type} in Ratingen-{district}
                     <br />
-                    {/* <FontAwesomeIcon icon={faRoad} />{" "} */}
                     {street}
                     <br />
                     {plz}
