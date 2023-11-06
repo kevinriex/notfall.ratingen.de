@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <>
             <Hero title="Stadt Ratingen" />
-            <Services mastername="Ihre Dienstleistungen" />
+            <Services mastername="Verfügbare Dienstleistungen" />
         </>
     );
 }
