@@ -5,8 +5,10 @@
     "scripts": {
         "dev": "next dev --turbo",
         "build": "next build",
+        "build-with-license": "npm run dep:gen && next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "dep:gen": "license-report --only=prod --output=json --config license-report-config.json > static/licenses.json"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.4.2",
