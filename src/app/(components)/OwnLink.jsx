@@ -14,7 +14,7 @@ export default function OwnLink({ href, button, arrow }) {
             } text-nowrap`}
         >
             {new RegExp(
-                /(?:(?:tel:|https:\/\/|mailto:).*?)(?<fqdn>(.*)(([0-9])|(?:\.(de|com|eu))))/,
+                /(?:(?:tel:|https:\/\/|mailto:))(?<fqdn>([^\/]*))/,
                 "gm"
             ).exec(href)?.groups?.fqdn ?? "Hier geht's lang.."}{" "}
             {arrow ? <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> : ""}
