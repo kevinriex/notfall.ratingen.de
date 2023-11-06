@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "@/app/components/Header";
 
 export default function Hero({ title }) {
     return (

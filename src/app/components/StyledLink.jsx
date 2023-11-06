@@ -2,10 +2,7 @@
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function OwnLink({ href, button, arrow }) {
-    if (button == true) {
-        arrow = true;
-    }
+export default function StyledLink({ href, button, arrow }) {
     return (
         <a
             href={href}
@@ -17,7 +14,7 @@ export default function OwnLink({ href, button, arrow }) {
                 /(?:(?:tel:|https:\/\/|mailto:))(?<fqdn>([^\/]*))/,
                 "gm"
             ).exec(href)?.groups?.fqdn ?? "Hier geht's lang.."}{" "}
-            {arrow ? <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> : ""}
+            {arrow || button ? <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> : ""}
         </a>
     );
 }

@@ -1,5 +1,5 @@
 "use client";
-import OwnLink from "../(components)/OwnLink";
+import StyledLink from "@/app/components/StyledLink";
 export default function DatenschutzPage() {
     return (
         <div className="px-4 py-5 my-5 container">
@@ -46,7 +46,7 @@ export default function DatenschutzPage() {
                 Sitz unseres Unternehmens befindet. Der folgende Link stellt
                 eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten
                 bereit:{" "}
-                <OwnLink href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" arrow={true}/>
+                <StyledLink href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" arrow={true}/>
                 .
             </p>
             <h3>Recht auf Datenübertragbarkeit</h3>
@@ -156,7 +156,7 @@ export default function DatenschutzPage() {
                 Standardvertragsklauseln der EU-Kommission gemäß
                 Durchführungsbeschluss (EU) 2021/914 vom 4. Juni 2021. Eine
                 Kopie dieser Standardvertragsklauseln können Sie unter{" "}
-                <OwnLink href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE/" arrow={true}/>{" "}
+                <StyledLink href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32021D0914&from=DE/" arrow={true}/>{" "}
                 einsehen.
             </p>
             <p>

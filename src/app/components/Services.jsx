@@ -1,4 +1,5 @@
 "use client";
+import ServiceLink from "@/app/components/ServiceLink";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -17,7 +18,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import ServiceLink from "./ServiceLink";
 
 const LinkSammlung = [
     [
