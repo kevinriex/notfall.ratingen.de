@@ -12,32 +12,40 @@ export default async function Licenses() {
         <Container className="px-4 py-5 vw-100 text-center d-flex align-items-center justify-content-center flex-column">
             <h1>Lizenzen</h1>
             {ListLicenses.map(
-                ({ name, link, installedVersion, author }, idx) => (
-                    <div key={link} className="col d-flex align-items-start">
-                        {/* <div className="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 text-center">
+                ({ name, link, installedVersion, author }, idx) => {
+                    link = link.replaceAll(/(git\+|\.git)/gm, "");
+                    return (
+                        <div
+                            key={link}
+                            className="col d-flex align-items-start"
+                        >
+                            {/* <div className="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 text-center">
                             <FontAwesomeIcon icon={faCode} />
                         </div> */}
-                        <div>
-                            <h3 className="fs-4 text-body-emphasis mt-4">{name}</h3>
-                            <p>
-                                {author}, {installedVersion}
-                            </p>
-                            <a
-                                href={link}
-                                className="btn btn-primary text-nowrap"
-                            >
-                                {new RegExp(
-                                    /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
-                                    "gm"
-                                ).exec(link)?.groups?.fqdn ??
-                                    "Hier geht's lang.."}{" "}
-                                <FontAwesomeIcon
-                                    icon={faArrowUpRightFromSquare}
-                                />
-                            </a>
+                            <div>
+                                <h3 className="fs-4 text-body-emphasis mt-4">
+                                    {name}
+                                </h3>
+                                <p>
+                                    {author}, {installedVersion}
+                                </p>
+                                <a
+                                    href={link}
+                                    className="btn btn-primary text-nowrap"
+                                >
+                                    {new RegExp(
+                                        /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
+                                        "gm"
+                                    ).exec(link)?.groups
+                                        ?.fqdn ?? "Hier geht's lang.."}{" "}
+                                    <FontAwesomeIcon
+                                        icon={faArrowUpRightFromSquare}
+                                    />
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                )
+                    );
+                }
             )}
         </Container>
     );
