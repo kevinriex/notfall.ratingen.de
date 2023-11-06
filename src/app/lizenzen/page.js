@@ -19,9 +19,6 @@ export default async function Licenses() {
                             key={link}
                             className="col d-flex align-items-start"
                         >
-                            {/* <div className="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 text-center">
-                            <FontAwesomeIcon icon={faCode} />
-                        </div> */}
                             <div>
                                 <h3 className="fs-4 text-body-emphasis mt-4">
                                     {name}
