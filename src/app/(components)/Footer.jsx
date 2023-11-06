@@ -21,6 +21,14 @@ export default function Footer() {
                             Impressum
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link
+                            href="/datenschutz"
+                            className="nav-link px-2 text-body-secondary"
+                        >
+                            Datenschutz
+                        </Link>
+                    </li>
                 </ul>
                 <p className="text-center text-body-secondary">
                     &#169; 2023 Stadt Ratingen
