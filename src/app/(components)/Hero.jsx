@@ -24,7 +24,7 @@ export default function Hero({ title }) {
                         <br />
                         Auch Online-Dienstleistungen der Stadtverwaltung, etwa
                         Terminbuchungen im Bürgerbüro, der Mängelmelder oder das
-                        Ratsinformationssystem können weiterhin in Anspruch
+                        Ratsinformationssystem, können weiterhin in Anspruch
                         genommen werden. Im Folgenden eine Reihe von Links zu
                         weiterhin funktionierenden Online-Diensten der Stadt
                         Ratingen. Wie lange die Störung anhält, ist zurzeit

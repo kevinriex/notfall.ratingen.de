@@ -22,9 +22,9 @@ import ServiceLink from "../(components)/ServiceLink";
 const LinkSammlung = [
     [
         {
-            name: "Serviceportal",
+            name: "Service-Portal",
             href: "https://serviceportal.ratingen.de/",
-            desc: "Hier finden sie alle wichtigen Dienstleistungen.",
+            desc: "Hier finden Sie Online-Dienstleistungen der Stadt Ratingen.",
             icon: <FontAwesomeIcon icon={faUser} />,
         },
         {
@@ -36,7 +36,7 @@ const LinkSammlung = [
         {
             name: "Ratsinformationssystem",
             href: "https://ratsinfo.ratingen.de/",
-            desc: "Hier finden sie alle Ratsunterlagen.",
+            desc: "Hier finden Sie Unterlagen zu den Sitzungen des Stadtrates und seiner Ausschüsse.",
             icon: <FontAwesomeIcon icon={faLandmark} />,
         },
     ],
@@ -44,19 +44,19 @@ const LinkSammlung = [
         {
             name: "Mängelmelder",
             href: "https://ratingen.maengelmelder.de/",
-            desc: "Hier können Sie Termine im Bürgerbüro buchen.",
+            desc: "Hier können Sie uns Schäden und Mängel an öffentlichen Einrichtungen melden.",
             icon: <FontAwesomeIcon icon={faWarning} />,
         },
         {
             name: "Stadtbibliothek",
             href: "https://webopac.ratingen.de/webopac/index.asp?DB=web_biblio",
-            desc: "Hier finden sie alle wichtigen Dienstleistungen.",
+            desc: "Hier finden Sie Medien, die Sie im Medienzentrum und in den Stadtteil-Büchereien ausleihen können.",
             icon: <FontAwesomeIcon icon={faBook} />,
         },
         {
             name: "Sperrmüllanmeldung",
             href: "https://awistalogistik.de/das-bieten-wir/ratingen/",
-            desc: "Hier finden sie alle wichtigen Dienstleistungen.",
+            desc: "Hier können Sie einen Termin für die Abfuhr Ihres Sperrmülls beantragen.",
             icon: <FontAwesomeIcon icon={faTrash} />,
         },
     ],
@@ -64,19 +64,19 @@ const LinkSammlung = [
         {
             name: "VHS",
             href: "https://vhs-ratingen.de/",
-            desc: "Hier finden sie alle wichtigen Dienstleistungen.",
+            desc: "Hier gelangen Sie zum Internetauftritt der Volkshochschule Ratingen.",
             icon: <FontAwesomeIcon icon={faSchool} />,
         },
         {
             name: "Geoportal",
             href: "https://gdi.regioit.de/portal/apps/sites/#/kartendienste/",
-            desc: "Hier finden sie alle wichtigen Dienstleistungen.",
+            desc: "Hier finden Sie die Kartendienste der Stadt Ratingen.",
             icon: <FontAwesomeIcon icon={faEarthEurope} />,
         },
         {
             name: "Aktuelle Informationen",
             href: "https://facebook.com/DeinRatingen/",
-            desc: "Hier finden sie alle wichtigen Dienstleistungen.",
+            desc: "Hier gelangen Sie zur Facebook-Seite „Dein Ratingen“.",
             icon: <FontAwesomeIcon icon={faFacebook} />,
         },
     ],
@@ -90,7 +90,7 @@ const LinkSammlung = [
         {
             name: "Schulen",
             href: "/schulen",
-            desc: "Hier finden Sie alle Schulen",
+            desc: "Hier finden Sie alle Schulen.",
             icon: <FontAwesomeIcon icon={faGraduationCap} />,
         },
         {
