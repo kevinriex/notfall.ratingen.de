@@ -44,7 +44,7 @@ export default function DatenschutzPage() {
                     <br />
                     40878 Ratingen
                     <br />
-                    Telefon: <StyledLink href="tel:02102 550-1000" />
+                    Telefon:{" "}<StyledLink href="tel:02102 550-1000" />
                     <br />
                     E-Mail:{" "}
                     <StyledLink href="mailto:buergermeister@ratingen.de" />
@@ -154,7 +154,7 @@ export default function DatenschutzPage() {
                 </h2>
                 <p>
                     Unseren städtischen Datenschutzbeauftragten erreichen Sie
-                    unter
+                    unter{" "}
                     <StyledLink
                         href="mailto:datenschutz@ratingen.de"
                         arrow={true}
