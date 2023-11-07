@@ -4,6 +4,7 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import {
     faBook,
+    faBookmark,
     faCalendarDays,
     faChild,
     faEarthEurope,
@@ -76,7 +77,12 @@ const LinkSammlung = [
         {
             name: "Aktuelle Informationen",
             href: "https://facebook.com/DeinRatingen/",
-            desc: <>Hier gelangen Sie zur Facebook-Seite <em>„Dein Ratingen“</em>.</>,
+            desc: (
+                <>
+                    Hier gelangen Sie zur Facebook-Seite{" "}
+                    <em>„Dein Ratingen“</em>.
+                </>
+            ),
             icon: <FontAwesomeIcon icon={faFacebook} />,
         },
     ],
@@ -94,10 +100,30 @@ const LinkSammlung = [
             icon: <FontAwesomeIcon icon={faGraduationCap} />,
         },
         {
+            name: "Stellenangebote",
+            href: "/stellen",
+            desc: "Hier finden Sie eine Übersicht aktueller Ausschreibungsverfahren bei der Stadt Ratingen.",
+            icon: <FontAwesomeIcon icon={faBookmark} />,
+        },
+    ],
+    [
+        {
+            name: "",
+            href: "",
+            desc: "",
+            icon: <></>,
+        },
+        {
             name: "Kreis Mettmann",
             href: "https://kreis-mettmann.de",
             desc: "Die Website des Kreises Mettmann.",
             icon: <FontAwesomeIcon icon={faCircle} />,
+        },
+        {
+            name: "",
+            href: "",
+            desc: "",
+            icon: <></>,
         },
     ],
 ];

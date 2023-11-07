@@ -9,7 +9,7 @@ export default function ServiceLink({ name, href, desc, icon }) {
             <div>
                 <h3 className="fs-4 text-body-emphasis">{name}</h3>
                 <p>{desc}</p>
-                <StyledLink href={href} button={true} />
+                {href ? <StyledLink href={href} button={true} /> : ""}
             </div>
         </div>
     );
