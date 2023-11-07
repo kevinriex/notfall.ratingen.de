@@ -8,3 +8,8 @@ $primary: #da121a;
         text-align: justify;
     }
 }
+
+li::before{
+    font-size:120%;
+    font-weight:bold;
+}
