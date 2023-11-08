@@ -10,7 +10,7 @@ export default function ImpressumPage() {
                 <p className="">
                     Die Internetportale{" "}
                     <StyledLink href="https://www.ratingen.de" arrow={true} />{" "}
-                    bzw.
+                    bzw.{" "}
                     <StyledLink
                         href="https://www.stadt-ratingen.de"
                         arrow={true}
