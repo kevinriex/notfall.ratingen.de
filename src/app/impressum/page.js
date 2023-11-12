@@ -132,7 +132,7 @@ export default function ImpressumPage() {
                 <h2 className="pt-5">Lizenzen</h2>
                 <p>Alle für diesen Webauftritt verwendeten Techologien finden Sie
                 unter:{" "}
-                <StyledLink href="https://ratingen.de/lizenzen" arrow={true} /></p>
+                <StyledLink href="/lizenzen" arrow={true} text="ratingen.de/lizenzen" /></p>
                 <h2 className="pt-5">Quelltext</h2>
                 <p>Diesen Quelltext für diesen Webauftritt finden Sie unter:{" "}
                 <StyledLink
