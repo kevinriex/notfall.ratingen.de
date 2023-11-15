@@ -1,8 +1,16 @@
 "use client";
 import StyledLink from "@/app/components/StyledLink";
+import { useEffect, useState } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+
 export default function ImpressumPage() {
+    const [hostname, setHostname] = useState("");
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            setHostname(window.location.hostname)
+        }
+    }, []);
     return (
         <div className="px-4 py-5 my-5 container lead">
             <h1 className="py-5">Impressum</h1>
@@ -130,15 +138,23 @@ export default function ImpressumPage() {
                     </Row>
                 </div>
                 <h2 className="pt-5">Lizenzen</h2>
-                <p>Alle für diesen Webauftritt verwendeten Techologien finden Sie
-                unter:{" "}
-                <StyledLink href="/lizenzen" arrow={true} text="ratingen.de/lizenzen" /></p>
+                <p>
+                    Alle für diesen Webauftritt verwendeten Techologien finden
+                    Sie unter:{" "}
+                    <StyledLink
+                        href="/lizenzen"
+                        arrow={true}
+                        text={`${hostname}/lizenzen`}
+                    />
+                </p>
                 <h2 className="pt-5">Quelltext</h2>
-                <p>Diesen Quelltext für diesen Webauftritt finden Sie unter:{" "}
-                <StyledLink
-                    href="https://github.com/kevinriex/notfall.ratingen.de"
-                    arrow={true}
-                /></p>
+                <p>
+                    Diesen Quelltext für diesen Webauftritt finden Sie unter:{" "}
+                    <StyledLink
+                        href="https://github.com/kevinriex/notfall.ratingen.de"
+                        arrow={true}
+                    />
+                </p>
             </div>
         </div>
     );
