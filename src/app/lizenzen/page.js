@@ -7,11 +7,11 @@ import Container from "react-bootstrap/Container";
 
 export default async function Licenses() {
     const file = await fs.readFile(process.cwd() + "/public/licenses.json", "utf-8")
-    const ListLicenses = JSON.parse(file);
+    const listLicenses = JSON.parse(file);
     return (
         <Container className="px-4 py-5 vw-100 text-center d-flex align-items-center justify-content-center flex-column">
             <h1>Lizenzen</h1>
-            {ListLicenses.map(
+            {listLicenses.map(
                 ({ name, link, installedVersion, author }, idx) => {
                     link = link.replaceAll(/(git\+|\.git)/gm, "");
                     return (
