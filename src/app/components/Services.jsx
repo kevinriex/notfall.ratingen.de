@@ -5,6 +5,7 @@ import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import {
     faBook,
     faBookmark,
+    faCalendar,
     faCalendarDays,
     faChild,
     faEarthEurope,
@@ -13,7 +14,7 @@ import {
     faSchool,
     faTrash,
     faUser,
-    faWarning,
+    faWarning
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
@@ -108,10 +109,10 @@ const LinkSammlung = [
     ],
     [
         {
-            name: "",
-            href: "",
-            desc: "",
-            icon: <></>,
+            name: "Veranstaltungskalender",
+            href: "https://kalender-ratingen.de/",
+            desc: "Hier finden Sie alle Veranstaltungen in Ratingen.",
+            icon: <FontAwesomeIcon icon={faCalendar} />,
         },
         {
             name: "Kreis Mettmann",
