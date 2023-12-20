@@ -8,6 +8,8 @@ import {
     faCalendar,
     faCalendarDays,
     faChild,
+    faClock,
+    faDumpster,
     faEarthEurope,
     faGraduationCap,
     faLandmark,
@@ -113,6 +115,26 @@ const LinkSammlung = [
             href: "https://kalender-ratingen.de/",
             desc: "Hier finden Sie alle Veranstaltungen in Ratingen.",
             icon: <FontAwesomeIcon icon={faCalendar} />,
+        },
+        {
+            name: "Kontakt und Öffnungszeiten",
+            href: "/kontakte",
+            desc: "Hier erhalten Sie einen Überblick zu städtischen Einrichtungen.",
+            icon: <FontAwesomeIcon icon={faClock} />,
+        },
+        {
+            name: "Abfallkalender",
+            href: "https://www.umwelt-webmedia.de/index.php?id=b2a854d7f22b13c44c853ac0157d3c07",
+            desc: "Hier erfahren Sie, wann bei Ihnen die Mülltonnen geleert werden",
+            icon: <FontAwesomeIcon icon={faDumpster} />,
+        },
+    ],
+    [
+        {
+            name: "",
+            href: "",
+            desc: "",
+            icon: <></>,
         },
         {
             name: "Kreis Mettmann",
