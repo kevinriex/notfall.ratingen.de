@@ -13,7 +13,7 @@ export default function StyledLink({ href, button, arrow, text }) {
             {new RegExp(
                 /(?:(?:tel:|https:\/\/|mailto:))(?<fqdn>([^\/]*))/,
                 "gm"
-            ).exec(href)?.groups?.fqdn ?? text ?? "Hier geht's lang.."}{" "}
+            ).exec(href)?.groups?.fqdn ?? text ?? "Hier geht's lang..."}{""}
             {arrow || button ? <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> : ""}
         </a>
     );
