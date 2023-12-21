@@ -156,7 +156,8 @@ export default function ContactPage() {
                         <br />
                         <br />
                         Alle Informationen zu den Öffnungszeiten sind unter
-                        Telefon <StyledLink href="tel:02102 550 5250" /> oder <StyledLink href="/" text="ratingen.de" /> zu erfahren.
+                        Telefon <StyledLink href="tel:02102 550 5250" /> oder{" "}
+                        <StyledLink href="/" text="ratingen.de" /> zu erfahren.
                     </p>
                 </div>
             </Container>
