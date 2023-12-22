@@ -72,11 +72,11 @@ export default function ContactPage() {
             <Container className="px-4 py-5">
                 <HeroContact title="Kontakt und Öffnungszeiten" />
                 {Contacts.map((contact, idx) => (
-                    <Row className="g-4 py-5" key={idx}>
+                    <Row className="g-4 py-3" key={idx}>
                         <Contact name={contact.name} tel={contact.tel} />
                     </Row>
                 ))}
-                <div className="col-lg-8 mx-auto">
+                <div className="col-lg-8 mx-auto pt-5">
                     <h2>
                         Öffnungszeiten der städtischen Kultureinrichtungen
                         während der Feiertage
@@ -155,9 +155,7 @@ export default function ContactPage() {
                         </ul>
                         <br />
                         <br />
-                        Alle Informationen zu den Öffnungszeiten sind unter
-                        Telefon <StyledLink href="tel:02102 550 5250" /> oder{" "}
-                        <StyledLink href="/" text="ratingen.de" /> zu erfahren.
+                        Weitere Informationen bekommen Sie unter der <StyledLink href="tel:02102 550 5250" />.
                     </p>
                 </div>
             </Container>

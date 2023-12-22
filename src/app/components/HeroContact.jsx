@@ -1,5 +1,4 @@
 import Header from "@/app/components/Header";
-import StyledLink from "./StyledLink";
 
 export default function HeroContact({ title }) {
     return (
@@ -19,21 +18,16 @@ export default function HeroContact({ title }) {
                         <br />
                         Eine Änderung gibt es an den genannten Tagen in Bezug
                         auf die telefonische Erreichbarkeit der Verwaltung über
-                        die Zentralnummer <StyledLink href="tel:02102 550 0" />.
+                        die Zentralnummer 02102 550 0.
                         Da der Vermittlungsdienst über diese Nummer durch den
                         Kreis Mettmann erfolgt, die Kreisverwaltung aber
                         zwischen Weihnachten und Neujahr komplett geschlossen
-                        ist, können an diesen Tagen keine Anrufe über die{" "}
-                        <StyledLink href="tel:02102 550 0" /> angenommen werden.
+                        ist, können an diesen Tagen <span class="text-primary">keine Anrufe über die 02102 550 0</span> angenommen werden.
                         Der Kreis Mettmann wird per Ansagetext auf diese
                         Einschränkung hinweisen.
                         <br />
                         <br />
-                        Bürgerinnen und Bürger finden jedoch im Internet unter{" "}
-                        <StyledLink href="/" text="ratingen.de" /> den richtigen
-                        Ansprechpartner in der Verwaltung. Auf der städtischen
-                        Not-Homepage wird eine Übersicht eingestellt mit
-                        folgenden Rufnummern für alle Stadtämter/Fachbereiche:
+                        Nachfolgend eine Übersicht mit Telefonnummern für alle Stadtämter/Fachbereiche:
                     </p>
                 </div>
             </div>
