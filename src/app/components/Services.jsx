@@ -8,7 +8,6 @@ import {
     faCalendar,
     faCalendarDays,
     faChild,
-    faClock,
     faDumpster,
     faEarthEurope,
     faGraduationCap,
@@ -16,7 +15,7 @@ import {
     faSchool,
     faTrash,
     faUser,
-    faWarning,
+    faWarning
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
@@ -52,10 +51,10 @@ const LinkSammlung = [
             icon: <FontAwesomeIcon icon={faWarning} />,
         },
         {
-            name: "Stadtbibliothek",
-            href: "https://webopac.ratingen.de/webopac/index.asp?DB=web_biblio",
-            desc: "Hier finden Sie Medien, die Sie im Medienzentrum und in den Stadtteil-Büchereien ausleihen können.",
-            icon: <FontAwesomeIcon icon={faBook} />,
+            name: "Abfallkalender",
+            href: "https://www.umwelt-webmedia.de/index.php?id=b2a854d7f22b13c44c853ac0157d3c07",
+            desc: "Hier erfahren Sie, wann bei Ihnen die Mülltonnen geleert werden",
+            icon: <FontAwesomeIcon icon={faDumpster} />,
         },
         {
             name: "Sperrmüllanmeldung",
@@ -72,21 +71,16 @@ const LinkSammlung = [
             icon: <FontAwesomeIcon icon={faSchool} />,
         },
         {
-            name: "Geoportal",
-            href: "https://gdi.regioit.de/portal/apps/sites/#/kartendienste/",
-            desc: "Hier finden Sie die Kartendienste der Stadt Ratingen.",
-            icon: <FontAwesomeIcon icon={faEarthEurope} />,
+            name: "Stadtbibliothek",
+            href: "https://webopac.ratingen.de/webopac/index.asp?DB=web_biblio",
+            desc: "Hier finden Sie Medien, die Sie im Medienzentrum und in den Stadtteil-Büchereien ausleihen können.",
+            icon: <FontAwesomeIcon icon={faBook} />,
         },
         {
-            name: "Aktuelle Informationen",
-            href: "https://facebook.com/DeinRatingen/",
-            desc: (
-                <>
-                    Hier gelangen Sie zur Facebook-Seite{" "}
-                    <em>„Dein Ratingen“</em>.
-                </>
-            ),
-            icon: <FontAwesomeIcon icon={faFacebook} />,
+            name: "Veranstaltungskalender",
+            href: "https://kalender-ratingen.de/",
+            desc: "Hier finden Sie alle Veranstaltungen in Ratingen.",
+            icon: <FontAwesomeIcon icon={faCalendar} />,
         },
     ],
     [
@@ -111,31 +105,17 @@ const LinkSammlung = [
     ],
     [
         {
-            name: "Veranstaltungskalender",
-            href: "https://kalender-ratingen.de/",
-            desc: "Hier finden Sie alle Veranstaltungen in Ratingen.",
-            icon: <FontAwesomeIcon icon={faCalendar} />,
+            name: "Geoportal",
+            href: "https://gdi.regioit.de/portal/apps/sites/#/kartendienste/",
+            desc: "Hier finden Sie die Kartendienste der Stadt Ratingen.",
+            icon: <FontAwesomeIcon icon={faEarthEurope} />,
         },
-        {
-            name: "Kontakt und Öffnungszeiten",
-            href: "/kontakte",
-            desc: "Hier erhalten Sie einen Überblick zu städtischen Einrichtungen.",
-            icon: <FontAwesomeIcon icon={faClock} />,
-        },
-        {
-            name: "Abfallkalender",
-            href: "https://www.umwelt-webmedia.de/index.php?id=b2a854d7f22b13c44c853ac0157d3c07",
-            desc: "Hier erfahren Sie, wann bei Ihnen die Mülltonnen geleert werden",
-            icon: <FontAwesomeIcon icon={faDumpster} />,
-        },
-    ],
-    [
-        {
-            name: "",
-            href: "",
-            desc: "",
-            icon: <></>,
-        },
+        // {
+        //     name: "Kontakt und Öffnungszeiten",
+        //     href: "/kontakte",
+        //     desc: "Hier erhalten Sie einen Überblick zu städtischen Einrichtungen.",
+        //     icon: <FontAwesomeIcon icon={faClock} />,
+        // },
         {
             name: "Kreis Mettmann",
             href: "https://kreis-mettmann.de",
@@ -143,10 +123,15 @@ const LinkSammlung = [
             icon: <FontAwesomeIcon icon={faCircle} />,
         },
         {
-            name: "",
-            href: "",
-            desc: "",
-            icon: <></>,
+            name: "Aktuelle Informationen",
+            href: "https://facebook.com/DeinRatingen/",
+            desc: (
+                <>
+                    Hier gelangen Sie zur Facebook-Seite{" "}
+                    <em>„Dein Ratingen“</em>.
+                </>
+            ),
+            icon: <FontAwesomeIcon icon={faFacebook} />,
         },
     ],
 ];

@@ -26,15 +26,6 @@ export default function Hero({ title }) {
                         unten auf der Seite einen Überblick!
                         <br />
                         <br />
-                        Neu hinzugekommen sind jetzt der Abfallkalender 2024 und
-                        eine Übersicht über Öffnungszeiten und Telefonnummern
-                        der Stadt Ratingen, allgemein und rund um die Feiertage.
-                        <br />
-                        <br />
-                        Wir wünschen Ihnen frohe Weihnachten und ein glückliches
-                        neues Jahr 2024.
-                        <br />
-                        <br />
                         <em>Stadt Ratingen</em>
                     </p>
                 </div>
