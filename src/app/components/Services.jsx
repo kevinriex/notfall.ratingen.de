@@ -110,12 +110,6 @@ const LinkSammlung = [
             desc: "Hier finden Sie die Kartendienste der Stadt Ratingen.",
             icon: <FontAwesomeIcon icon={faEarthEurope} />,
         },
-        // {
-        //     name: "Kontakt und Öffnungszeiten",
-        //     href: "/kontakte",
-        //     desc: "Hier erhalten Sie einen Überblick zu städtischen Einrichtungen.",
-        //     icon: <FontAwesomeIcon icon={faClock} />,
-        // },
         {
             name: "Kreis Mettmann",
             href: "https://kreis-mettmann.de",
