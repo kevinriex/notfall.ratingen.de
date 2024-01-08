@@ -83,11 +83,12 @@ const primarySchools = [
         },
         {
             name: "Heinrich-Schmitz-Schule",
+            href: "https://www.heinrich-schmitz-schule.de/",
             street: "Duisburger Straße 112",
             plz: "40885 Ratingen",
             type: "Grundschule",
             tel: "02102 550 4802",
-            email: "",
+            email: "schule@heinrich-schmitz-schule.ratingen.de",
             district: "Lintorf",
         },
         {
