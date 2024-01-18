@@ -14,6 +14,7 @@ import {
     faLandmark,
     faSchool,
     faTrash,
+    faUmbrellaBeach,
     faUser,
     faWarning
 } from "@fortawesome/free-solid-svg-icons";
@@ -128,6 +129,26 @@ const LinkSammlung = [
             icon: <FontAwesomeIcon icon={faFacebook} />,
         },
     ],
+    [
+        {
+            name: "",
+            href: "",
+            desc: "",
+            icon: <></>
+        },
+        {
+            name: "Ferienprogram der Stadt Ratingen",
+            href: "https://unser-ferienprogramm.de/ratingen/",
+            desc: "Hier finden Sie das Ferienprogramm der Stadt Ratingen",
+            icon: <FontAwesomeIcon icon={faUmbrellaBeach} />
+        },
+        {
+            name: "",
+            href: "",
+            desc: "",
+            icon: <></>
+        }
+    ]
 ];
 
 export default function Services({ mastername }) {
