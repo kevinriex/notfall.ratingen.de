@@ -31,7 +31,7 @@ export default function Footer() {
                     </li>
                 </ul>
                 <p className="text-center text-body-secondary">
-                    &#169; 2023 Stadt Ratingen
+                    &#169; 2024 Stadt Ratingen
                 </p>
             </footer>
         </div>
