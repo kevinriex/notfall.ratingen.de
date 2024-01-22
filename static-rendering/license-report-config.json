@@ -1,8 +1,0 @@
-{
-    "fields": [
-      "name",
-      "link",
-      "installedVersion",
-      "author"
-    ]
-}

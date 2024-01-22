@@ -8,7 +8,7 @@ export default function ImpressumPage() {
     const [hostname, setHostname] = useState("");
     useEffect(() => {
         if (typeof window !== "undefined") {
-            setHostname(window.location.hostname)
+            setHostname(window.location.hostname);
         }
     }, []);
     return (

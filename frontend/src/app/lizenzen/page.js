@@ -1,12 +1,13 @@
-import {
-    faArrowUpRightFromSquare
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { promises as fs } from "fs";
 import Container from "react-bootstrap/Container";
 
 export default async function Licenses() {
-    const file = await fs.readFile(process.cwd() + "/public/licenses.json", "utf-8")
+    const file = await fs.readFile(
+        process.cwd() + "/public/licenses.json",
+        "utf-8"
+    );
     const listLicenses = JSON.parse(file);
     return (
         <Container className="px-4 py-5 vw-100 text-center d-flex align-items-center justify-content-center flex-column">
@@ -33,8 +34,8 @@ export default async function Licenses() {
                                     {new RegExp(
                                         /(?:https:\/\/)(?<fqdn>(.*)(?:\.(de|com)))/,
                                         "gm"
-                                    ).exec(link)?.groups
-                                        ?.fqdn ?? "Hier geht's lang.."}{" "}
+                                    ).exec(link)?.groups?.fqdn ??
+                                        "Hier geht's lang.."}{" "}
                                     <FontAwesomeIcon
                                         icon={faArrowUpRightFromSquare}
                                     />

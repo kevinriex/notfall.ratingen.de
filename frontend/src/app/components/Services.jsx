@@ -16,7 +16,7 @@ import {
     faTrash,
     faUmbrellaBeach,
     faUser,
-    faWarning
+    faWarning,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
@@ -134,21 +134,21 @@ const LinkSammlung = [
             name: "",
             href: "",
             desc: "",
-            icon: <></>
+            icon: <></>,
         },
         {
             name: "Ferienprogram der Stadt Ratingen",
             href: "https://unser-ferienprogramm.de/ratingen/",
             desc: "Hier finden Sie das Ferienprogramm der Stadt Ratingen",
-            icon: <FontAwesomeIcon icon={faUmbrellaBeach} />
+            icon: <FontAwesomeIcon icon={faUmbrellaBeach} />,
         },
         {
             name: "",
             href: "",
             desc: "",
-            icon: <></>
-        }
-    ]
+            icon: <></>,
+        },
+    ],
 ];
 
 export default function Services({ mastername }) {
