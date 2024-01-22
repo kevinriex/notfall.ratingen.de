@@ -17,18 +17,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    const callAPI = async () => {
-        try {
-            const res = await fetch("http://localhost:1337/api/meta");
-            return await res.json();
-        } catch (err) {
-            console.log(err);
-        }
-    };
+    // const callAPI = async () => {
+    //     try {
+    //         const res = await fetch("http://localhost:1337/api/meta");
+    //         return await res.json();
+    //     } catch (err) {
+    //         console.log(err);
+    //     }
+    // };
     return (
         <html lang="de" data-bs-theme="light">
             <head>
-                <meta property="og:title" content={callAPI} />
+                <meta property="og:title" content="Stadt Ratingen" />
                 <meta
                     property="og:description"
                     content="Die Backup-Website der Stadt Ratingen"
