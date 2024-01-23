@@ -269,12 +269,48 @@ const secondarySchools = [
 
 export default function SchoolPage() {
     return (
-        <>
-            <Container className="px-4 py-5">
-                <Header title="Unsere Schulen" />
-                <h2 className="pb-2 border-bottom">Grundschulen</h2>
-                {primarySchools.map((linkTriple, idx) => (
-                    <Row className="g-4 py-5" key={idx}>
+        <Container className="px-4 py-5">
+            <Header title="Unsere Schulen" />
+            <h2 className="pb-2 border-bottom">Grundschulen</h2>
+            {primarySchools.map((linkTriple, idx) => (
+                <Row className="g-4 py-5" key={idx}>
+                    {linkTriple.map(
+                        (
+                            {
+                                name,
+                                href,
+                                street,
+                                plz,
+                                type,
+                                tel,
+                                email,
+                                district,
+                            },
+                            idx
+                        ) => (
+                            <Col key={name} className="col-sm-8 col-lg-4">
+                                <School
+                                    key={`${plz}${idx}`}
+                                    name={name}
+                                    href={href}
+                                    street={street}
+                                    plz={plz}
+                                    type={type}
+                                    tel={tel}
+                                    email={email}
+                                    district={district}
+                                />
+                            </Col>
+                        )
+                    )}
+                </Row>
+            ))}
+            <div className="mt-4">
+                <h2 className="pb-2 border-bottom mt-4">
+                    Weiterführende Schulen
+                </h2>
+                {secondarySchools.map((linkTriple, idx) => (
+                    <Row className="g-4 py-5" key={100 + idx}>
                         {linkTriple.map(
                             (
                                 {
@@ -306,48 +342,7 @@ export default function SchoolPage() {
                         )}
                     </Row>
                 ))}
-                <div className="mt-4">
-                    <h2 className="pb-2 border-bottom mt-4">
-                        Weiterführende Schulen
-                    </h2>
-                    {secondarySchools.map((linkTriple, idx) => (
-                        <Row className="g-4 py-5" key={100 + idx}>
-                            {linkTriple.map(
-                                (
-                                    {
-                                        name,
-                                        href,
-                                        street,
-                                        plz,
-                                        type,
-                                        tel,
-                                        email,
-                                        district,
-                                    },
-                                    idx
-                                ) => (
-                                    <Col
-                                        key={name}
-                                        className="col-sm-8 col-lg-4"
-                                    >
-                                        <School
-                                            key={`${plz}${idx}`}
-                                            name={name}
-                                            href={href}
-                                            street={street}
-                                            plz={plz}
-                                            type={type}
-                                            tel={tel}
-                                            email={email}
-                                            district={district}
-                                        />
-                                    </Col>
-                                )
-                            )}
-                        </Row>
-                    ))}
-                </div>
-            </Container>
-        </>
+            </div>
+        </Container>
     );
 }

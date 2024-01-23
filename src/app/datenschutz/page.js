@@ -1,8 +1,9 @@
 "use client";
 import StyledLink from "@/app/components/StyledLink";
+import { Container } from "react-bootstrap";
 export default function DatenschutzPage() {
     return (
-        <div className="px-4 py-5 my-5 container lead">
+        <Container className="px-4 py-5 my-5 lead">
             <h1 className="py-5">Datenschutzerklärung</h1>
             <p>
                 Wir, die Stadtverwaltung Ratingen, nehmen den Schutz Ihrer
@@ -162,6 +163,6 @@ export default function DatenschutzPage() {
                     .
                 </p>
             </div>
-        </div>
+        </Container>
     );
 }
