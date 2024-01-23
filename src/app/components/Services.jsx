@@ -12,6 +12,7 @@ import {
     faEarthEurope,
     faGraduationCap,
     faLandmark,
+    faNewspaper,
     faSchool,
     faTrash,
     faUmbrellaBeach,
@@ -131,15 +132,15 @@ const LinkSammlung = [
     ],
     [
         {
-            name: "",
-            href: "",
-            desc: "",
-            icon: <></>
+            name: "Amtsblätter",
+            href: "/amtsblaetter",
+            desc: "Hier finden Sie alle durch die Stadt Ratingen herausgegebene Amtsblätter.",
+            icon: <FontAwesomeIcon icon={faNewspaper} />
         },
         {
             name: "Ferienprogram der Stadt Ratingen",
             href: "https://unser-ferienprogramm.de/ratingen/",
-            desc: "Hier finden Sie das Ferienprogramm der Stadt Ratingen",
+            desc: "Hier finden Sie das Ferienprogramm der Stadt Ratingen.",
             icon: <FontAwesomeIcon icon={faUmbrellaBeach} />
         },
         {
