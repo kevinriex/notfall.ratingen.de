@@ -3,7 +3,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-export default function StyledLink({ href, button, arrow, text }) {
+export default function StyledLink({ href, button, arrow, text, icon }) {
     return (
         <Link
             href={href}
@@ -21,7 +21,7 @@ export default function StyledLink({ href, button, arrow, text }) {
             {arrow || button ? (
                 <>
                     {" "}
-                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    <FontAwesomeIcon icon={icon ?? faArrowUpRightFromSquare} />
                 </>
             ) : (
                 ""
