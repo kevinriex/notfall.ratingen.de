@@ -16,15 +16,15 @@ export const metadata = {
     description: "Notfallwebseite der Stadt Ratingen.",
 };
 
-export default function RootLayout({ children }) {
-    // const callAPI = async () => {
-    //     try {
-    //         const res = await fetch("http://localhost:1337/api/meta");
-    //         return await res.json();
-    //     } catch (err) {
-    //         console.log(err);
-    //     }
-    // };
+export async function getStaticProps() {
+    const strapires = await (fetch("/api/strapi/meta"))
+    const meta = await strapires.json()
+    return { props: { meta } }
+}
+
+export default async function RootLayout({ children, meta }) {
+   
+    //const meta = await import("./api/strapi/strapi").GET().json()
     return (
         <html lang="de" data-bs-theme="light">
             <head>
@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
                 <meta property="og:image" content="/wappen.jpg" />
             </head>
             <body data-bs-theme="light" className={inter.className}>
+                <h1>{meta}</h1>
                 {children}
                 <Footer />
             </body>
