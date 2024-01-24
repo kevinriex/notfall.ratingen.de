@@ -29,6 +29,11 @@ jobs:
             - name: npm clean install
               run: npm ci
 
+            - name: Install additional dependencies
+              run: |
+                sudo apt-get install ghostscript
+                sudo apt-get install graphicsmagick
+
             - name: npm build
               run: npm run build
 

@@ -32,6 +32,12 @@ jobs:
                   restore-keys: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
             - name: Install dependencies
               run: npm ci
+
+            - name: Install additional dependencies
+              run: |
+                sudo apt-get install ghostscript
+                sudo apt-get install graphicsmagick
+
             - name: Build with Next.js
               run: npx --no-install next build
             - name: Upload Artifact
