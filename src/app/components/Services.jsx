@@ -132,9 +132,9 @@ const LinkSammlung = [
     ],
     [
         {
-            name: "Amtsblätter",
-            href: "/amtsblaetter",
-            desc: "Hier finden Sie alle durch die Stadt Ratingen herausgegebene Amtsblätter.",
+            name: "Amtsblatt",
+            href: "/amtsblatt",
+            desc: "Hier finden Sie das durch die Stadt Ratingen herausgegebene Amtsblatt.",
             icon: <FontAwesomeIcon icon={faNewspaper} />
         },
         {

@@ -5,10 +5,10 @@ import { fromBuffer } from "pdf2pic";
 import { Container } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Amtsblatt from "../components/Amtsblatt";
+import AmtsblattCard from "../components/AmtsblattCard";
 
 
-const Amtsblaetter = [
+const AmtsblattList = [
     [
         {
             text: "Amtsblatt 2024-01",
@@ -22,7 +22,7 @@ const Amtsblaetter = [
 ];
 
 async function fetchPreviews() {
-    const basePath = path.resolve(process.cwd() + "/public/amtsblaetter");
+    const basePath = path.resolve(process.cwd() + "/public/amtsblatt");
     async function getPdfImages(filePath) {
         const options = {
             density: 100,
@@ -39,9 +39,9 @@ async function fetchPreviews() {
         return meta.base64;
     }
 
-    const blaetter = (await fs.readdir(basePath)).sort();
+    const blattFileName = (await fs.readdir(basePath)).sort();
     const images = [];
-    for (const doc of blaetter) {
+    for (const doc of blattFileName) {
         const img = await getPdfImages(path.resolve(basePath + `/${doc}`));
         images.push(img);
     }
@@ -49,16 +49,16 @@ async function fetchPreviews() {
     return images.map((image) => `data:image/png;base64,${image}`);
 }
 
-export default async function AmtsblaetterPage() {
+export default async function AmtsblattPage() {
     const img = await fetchPreviews()
     return (
         <Container className="px-4 py-5 my-5 lead w-100">
             <Header title="Amtsblätter" />
-            {Amtsblaetter.map((linkTriple, idx) => (
+            {AmtsblattList.map((linkTriple, idx) => (
                 <Row className="g-4 py-5" key={idx}>
                     {linkTriple.map(({ text, href }, idx) => (
                         <Col key={text + idx} className="col-sm-8 col-lg-4">
-                            <Amtsblatt href={href} text={text} image={img[idx]} />
+                            <AmtsblattCard href={href} text={text} image={img[idx]} />
                         </Col>
                     ))}
                 </Row>

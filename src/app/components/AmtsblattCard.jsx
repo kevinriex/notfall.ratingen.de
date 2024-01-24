@@ -1,7 +1,7 @@
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import StyledLink from "../components/StyledLink";
+import StyledLink from "./StyledLink";
 
-export default function Amtsblatt({ href, text, image }) {
+export default function AmtsblattCard({ href, text, image }) {
     return (
         <div className="card" >
             <img
@@ -13,7 +13,7 @@ export default function Amtsblatt({ href, text, image }) {
             <div className="card-body">
                 <h5 className="card-title">{text}</h5>
                 <StyledLink
-                    href={`/amtsblaetter/${href}`}
+                    href={`/amtsblatt/${href}`}
                     button={true}
                     icon={faDownload}
                     text="Jetzt Downloaden"
