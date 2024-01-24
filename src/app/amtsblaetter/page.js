@@ -19,7 +19,7 @@ const Amtsblaetter = [
 ];
 
 async function fetchPreviews() {
-    const res = await fetch("http://localhost:3000/api/imgtopdf")
+    const res = await fetch("http://127.0.0.1:3000/api/imgtopdf")
     const { images } = await res.json()
     return images.map((image) => `data:image/png;base64,${image}`);
 }
