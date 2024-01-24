@@ -3,10 +3,11 @@ import StyledLink from "../components/StyledLink";
 
 export default function Amtsblatt({ href, text, image }) {
     return (
-        <div className="card">
+        <div className="card" >
             <img
                 className="card-img-top"
                 src={image}
+                style={{ height: "17.5em", objectFit: "cover", objectPosition: "100% 0"}}
                 alt="Card image cap"
             />
             <div className="card-body">
