@@ -24,6 +24,9 @@ Als VCS wurde Git genutzt. Geschrieben wurde der Code in Visual Studio Code.
 
 Der aktuellste Build ist immer als ZIP bei [dem aktuellsten Workflow Run][wf-run] zu finden.
 
+Vor einem Build ist sicherzustellen, dass `ghostscript` und `graphicsmagick` installiert sind.
+Instruktionen sind [hier](https://github.com/yakovmeister/pdf2image/blob/aa5ac4f970b930f69197541fc4ecb9c76e496830/docs/gm-installation.md) zu finden.
+
 Selbst bauen:
 
 ```bash
