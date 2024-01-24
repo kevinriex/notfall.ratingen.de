@@ -53,7 +53,7 @@ export default async function AmtsblattPage() {
     const img = await fetchPreviews()
     return (
         <Container className="px-4 py-5 my-5 lead w-100">
-            <Header title="Amtsblätter" />
+            <Header title="Amtsblatt" />
             {AmtsblattList.map((linkTriple, idx) => (
                 <Row className="g-4 py-5" key={idx}>
                     {linkTriple.map(({ text, href }, idx) => (
