@@ -25,7 +25,6 @@ export async function GET(request) {
     const blaetter = (await fs.readdir(basePath)).sort();
     const images = []
     for (const doc of blaetter) {
-        console.log(doc)
         const img = await getPdfImages(path.resolve(basePath + `/${doc}`));
         images.push(img)
     }
