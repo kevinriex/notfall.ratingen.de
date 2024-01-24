@@ -3,6 +3,7 @@ import StyledLink from "@/app/components/StyledLink";
 import { useEffect, useState } from "react";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container"
 
 export default function ImpressumPage() {
     const [hostname, setHostname] = useState("");
@@ -12,7 +13,7 @@ export default function ImpressumPage() {
         }
     }, []);
     return (
-        <div className="px-4 py-5 my-5 container lead">
+        <Container className="px-4 py-5 my-5 lead">
             <h1 className="py-5">Impressum</h1>
             <div className="uncode_text_Col">
                 <p className="">
@@ -156,6 +157,6 @@ export default function ImpressumPage() {
                     />
                 </p>
             </div>
-        </div>
+        </Container>
     );
 }
