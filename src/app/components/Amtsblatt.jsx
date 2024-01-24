@@ -6,7 +6,7 @@ export default function Amtsblatt({ href, text, image }) {
         <div className="card">
             <img
                 className="card-img-top"
-                src="https://placehold.co/200x200"
+                src={image}
                 alt="Card image cap"
             />
             <div className="card-body">

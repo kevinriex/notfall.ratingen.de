@@ -1,4 +1,3 @@
-"use client";
 
 import Header from "@/app/components/Header";
 import { Container } from "react-bootstrap";
@@ -11,25 +10,30 @@ const Amtsblaetter = [
         {
             text: "Amtsblatt 2024-01",
             href: "2024-01.pdf",
-            image: ""
         },
         {
             text: "Amtsblatt 2024-02",
             href: "2024-02.pdf",
-            image: ""
         },
     ],
 ];
 
-export default function AmtsblaetterPage() {
+async function fetchPreviews() {
+    const res = await fetch("http://localhost:3000/api/imgtopdf")
+    const { images } = await res.json()
+    return images.map((image) => `data:image/png;base64,${image}`);
+}
+
+export default async function AmtsblaetterPage() {
+    const img = await fetchPreviews()
     return (
         <Container className="px-4 py-5 my-5 lead w-100">
             <Header title="Amtsblätter" />
             {Amtsblaetter.map((linkTriple, idx) => (
                 <Row className="g-4 py-5" key={idx}>
-                    {linkTriple.map(({ text, href , image}, idx) => (
+                    {linkTriple.map(({ text, href }, idx) => (
                         <Col key={text + idx} className="col-sm-8 col-lg-4">
-                            <Amtsblatt href={href} text={text} image={image}/>
+                            <Amtsblatt href={href} text={text} image={img[idx]} />
                         </Col>
                     ))}
                 </Row>
