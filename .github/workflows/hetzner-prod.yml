@@ -49,4 +49,5 @@ jobs:
                   #passphrase: ${{ secrets.SERVER_PHRASE }}
                   source: "./out"
                   target: "public/"
+                  rm: true
                   strip_components: 2 # this is important

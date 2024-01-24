@@ -47,4 +47,5 @@ jobs:
                   #key: ${{ secrets.SERVER_KEY }}
                   source: "./out"
                   target: "ext/"
+                  rm: true
                   strip_components: 2 # this is important
