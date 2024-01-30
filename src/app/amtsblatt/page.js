@@ -18,6 +18,10 @@ const AmtsblattList = [
             text: "Amtsblatt 2024-02",
             href: "2024-02.pdf",
         },
+        {
+            text: "Amtsblatt 2024-03",
+            href: "2024-03.pdf"
+        }
     ],
 ];
 
