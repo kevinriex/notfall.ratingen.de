@@ -11,17 +11,17 @@ import AmtsblattCard from "../components/AmtsblattCard";
 const AmtsblattList = [
     [
         {
-            text: "Amtsblatt 2024-01",
-            href: "2024-01.pdf",
+            text: "Amtsblatt 2024-03",
+            href: "2024-03.pdf",
         },
         {
             text: "Amtsblatt 2024-02",
             href: "2024-02.pdf",
         },
         {
-            text: "Amtsblatt 2024-03",
-            href: "2024-03.pdf"
-        }
+            text: "Amtsblatt 2024-01",
+            href: "2024-01.pdf",
+        },
     ],
 ];
 
