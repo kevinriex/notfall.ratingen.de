@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.4.0...v1.4.1) (2024-02-16)
+
+
+### Bug Fixes
+
+* wrong number for amtsblatt ([#68](https://github.com/kevinriex/notfall.ratingen.de/issues/68)) ([f0f8709](https://github.com/kevinriex/notfall.ratingen.de/commit/f0f87099e06db8b688cfab0c013598f08f48aded))
+
 ## [1.4.0](https://github.com/kevinriex/notfall.ratingen.de/compare/1.3.0...v1.4.0) (2024-02-04)
 
 
