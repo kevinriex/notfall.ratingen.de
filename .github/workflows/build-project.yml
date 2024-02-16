@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
 
 permissions:
-    contents: read
+    contents: write
     id-token: write
 
 concurrency:
@@ -45,3 +45,8 @@ jobs:
               with:
                   name: project-build-${{ github.sha }}
                   path: ./out
+            
+            - uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                file_pattern: 'public/*.json'
+                commit_message: 'chore: update license.json'
