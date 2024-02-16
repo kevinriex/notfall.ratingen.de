@@ -38,8 +38,8 @@ jobs:
                 sudo apt-get install ghostscript
                 sudo apt-get install graphicsmagick
 
-            - name: Build with Next.js
-              run: npx --no-install next build
+            - name: Build project
+              run: npm run build
             - name: Upload Artifact
               uses: actions/upload-artifact@v4
               with:
