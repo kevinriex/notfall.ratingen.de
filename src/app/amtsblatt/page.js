@@ -49,7 +49,7 @@ async function fetchPreviews() {
         return meta.base64;
     }
 
-    const blattFileName = (await fs.readdir(basePath)).sort();
+    const blattFileName = (await fs.readdir(basePath)).sort().reverse();
     const images = [];
     for (const doc of blattFileName) {
         const img = await getPdfImages(path.resolve(basePath + `/${doc}`));
@@ -64,11 +64,15 @@ export default async function AmtsblattPage() {
     return (
         <Container className="px-4 py-5 my-5 lead w-100">
             <Header title="Amtsblatt" />
-            {AmtsblattList.map((linkTriple, idx) => (
-                <Row className="g-4 py-5" key={idx}>
-                    {linkTriple.map(({ text, href }, idx) => (
-                        <Col key={text + idx} className="col-sm-8 col-lg-4">
-                            <AmtsblattCard href={href} text={text} image={img[idx]} />
+            {AmtsblattList.map((linkTriple, row_idx) => (
+                <Row className="g-4 py-5" key={row_idx}>
+                    {linkTriple.map(({ text, href }, col_idx) => (
+                        <Col key={text + col_idx} className="col-sm-8 col-lg-4">
+                            <AmtsblattCard
+                                href={href}
+                                text={text}
+                                image={img[col_idx + 3 * row_idx]}
+                            />
                         </Col>
                     ))}
                 </Row>
