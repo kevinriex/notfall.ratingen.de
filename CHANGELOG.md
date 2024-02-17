@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.4.1...v1.4.2) (2024-02-17)
+
+
+### Bug Fixes
+
+* **amtsblatt:** preview images not displayed in the correct order ([cc2ee36](https://github.com/kevinriex/notfall.ratingen.de/commit/cc2ee3696301bb3ecf821958c77584f08402f4a2))
+
 ## [1.4.1](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.4.0...v1.4.1) (2024-02-16)
 
 
