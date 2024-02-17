@@ -37,8 +37,8 @@ async function fetchPreviews() {
         const options = {
             density: 100,
             format: "png",
-            width: 1080,
-            height: 1920,
+            width: 2480,
+            height: 3508,
         };
         const file = await fs.readFile(path.resolve(filePath));
         const convert = fromBuffer(file, options);
