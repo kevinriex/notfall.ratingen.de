@@ -30,7 +30,6 @@ async function fetchPreviews() {
     const blattData = [];
     for (const doc of blattFileName) {
         const img = await getPdfImages(path.resolve(basePath + `/${doc}`));
-        console.log(img)
         blattData.push({
             text: `Amtsblatt ${doc.slice(0, -4)}`,
             href: doc,
