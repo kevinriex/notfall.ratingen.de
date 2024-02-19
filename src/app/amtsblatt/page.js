@@ -8,29 +8,6 @@ import Row from "react-bootstrap/Row";
 import AmtsblattCard from "../components/AmtsblattCard";
 
 
-const AmtsblattList = [
-    [
-        {
-            text: "Amtsblatt 2024-04",
-            href: "2024-04.pdf",
-        },
-        {
-            text: "Amtsblatt 2024-03",
-            href: "2024-03.pdf",
-        },
-        {
-            text: "Amtsblatt 2024-02",
-            href: "2024-02.pdf",
-        },
-    ],
-    [
-        {
-            text: "Amtsblatt 2024-01",
-            href: "2024-01.pdf",
-        },
-    ],
-];
-
 async function fetchPreviews() {
     const basePath = path.resolve(process.cwd() + "/public/amtsblatt");
     async function getPdfImages(filePath) {
@@ -50,28 +27,33 @@ async function fetchPreviews() {
     }
 
     const blattFileName = (await fs.readdir(basePath)).sort().reverse();
-    const images = [];
+    const blattData = [];
     for (const doc of blattFileName) {
         const img = await getPdfImages(path.resolve(basePath + `/${doc}`));
-        images.push(img);
+        blattData.push({
+            text: `Amtsblatt ${doc.slice(0, -4)}`,
+            href: doc,
+            image: `data:image/png;base64,${img}`,
+        });
     }
+    const splitArray = (array, size) => array.map((val, i) => i % size === 0 && array.slice(i, i + size)).filter(e => e);
 
-    return images.map((image) => `data:image/png;base64,${image}`);
+    return splitArray(blattData, 3);
 }
 
 export default async function AmtsblattPage() {
-    const img = await fetchPreviews()
+    const amtsblattData = await fetchPreviews()
     return (
         <Container className="px-4 py-5 my-5 lead w-100">
             <Header title="Amtsblatt" />
-            {AmtsblattList.map((linkTriple, row_idx) => (
+            {amtsblattData.map((dataTriplet, row_idx) => (
                 <Row className="g-4 py-5" key={row_idx}>
-                    {linkTriple.map(({ text, href }, col_idx) => (
+                    {dataTriplet.map(({ text, href, image }, col_idx) => (
                         <Col key={text + col_idx} className="col-sm-8 col-lg-4">
                             <AmtsblattCard
                                 href={href}
                                 text={text}
-                                image={img[col_idx + 3 * row_idx]}
+                                image={image}
                             />
                         </Col>
                     ))}

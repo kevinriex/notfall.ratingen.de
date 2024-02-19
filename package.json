@@ -29,7 +29,8 @@
         "eslint-config-prettier": "^9.1.0",
         "license-report": "^6.5.0",
         "prettier": "3.2.5",
-        "sass": "^1.71.0"
+        "sass": "^1.71.0",
+        "spawn-sync": "^2.0.0"
     },
     "engines": {
         "node": ">=18.0.0"
