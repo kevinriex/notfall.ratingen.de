@@ -8,6 +8,7 @@ on:
 permissions:
     contents: write
     id-token: write
+    pull-requests: write
 
 concurrency:
     group: "build"
@@ -56,6 +57,8 @@ jobs:
             
             - name: Create license.json update PR
               if: steps.auto-commit-action.outputs.changes_detected == 'true'
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                 gh pr create \
                   --title "Update license.json" \
