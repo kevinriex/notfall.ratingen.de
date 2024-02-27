@@ -17,7 +17,8 @@ import {
     faTrash,
     faUmbrellaBeach,
     faUser,
-    faWarning
+    faWarning,
+    faSun
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
@@ -144,10 +145,10 @@ const LinkSammlung = [
             icon: <FontAwesomeIcon icon={faUmbrellaBeach} />
         },
         {
-            name: "",
-            href: "",
-            desc: "",
-            icon: <></>
+            name: "Ideenkarte Klimakonzept",
+            href: "https://www.ideenkarte.de/ratingen/",
+            desc: "Hier können Sie Ihre Ideen zur Fortschreibung des Klimaschutz- und Klimaanpassungskonzept eingeben.",
+            icon: <FontAwesomeIcon icon={faSun} />
         }
     ]
 ];
