@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.4.2...v1.5.0) (2024-02-27)
+
+
+### Features
+
+* **Services:** added "Ideenkarte Klimakonzept" ([b47676c](https://github.com/kevinriex/notfall.ratingen.de/commit/b47676c4acab908c397851481c2ce2f29118c38a))
+
 ## [1.4.2](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.4.1...v1.4.2) (2024-02-17)
 
 
