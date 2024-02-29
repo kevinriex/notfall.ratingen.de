@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.5.0...v1.6.0) (2024-02-29)
+
+
+### Features
+
+* **Services:** Add "Lärmaktionsplanung" ([428b01f](https://github.com/kevinriex/notfall.ratingen.de/commit/428b01fe84626ce5565f8cce1ceaf8d8e5f69aff))
+
 ## [1.5.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.4.2...v1.5.0) (2024-02-27)
 
 
