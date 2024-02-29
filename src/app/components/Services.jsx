@@ -18,7 +18,9 @@ import {
     faUmbrellaBeach,
     faUser,
     faWarning,
-    faSun
+    faSun,
+    faBullhorn,
+    faVolumeHigh
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Col from "react-bootstrap/Col";
@@ -150,6 +152,26 @@ const LinkSammlung = [
             desc: "Hier können Sie Ihre Ideen zur Fortschreibung des Klimaschutz- und Klimaanpassungskonzept eingeben.",
             icon: <FontAwesomeIcon icon={faSun} />
         }
+    ],
+    [
+        {
+            name: "",
+            href: "",
+            desc: "",
+            icon: ""
+        },
+        {
+            name: "Lärmaktionsplanung",
+            href: "https://beteiligung.nrw.de/portal/ratingen/startseite",
+            desc: "Vom 4. März bis 7. April können Sie hier Eingaben im Rahmen der Öffentlichkeitsbeteiligung machen.",
+            icon: <FontAwesomeIcon icon={faVolumeHigh} />
+        },
+        {
+            name: "",
+            href: "",
+            desc: "",
+            icon: ""
+        },
     ]
 ];
 
