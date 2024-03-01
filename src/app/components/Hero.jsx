@@ -16,7 +16,7 @@ export default function Hero({ title }) {
                         kommunalen Dienstleister Südwestfalen IT (SIT), der auch
                         die Website der Stadt Ratingen hostet. Wir arbeiten
                         aktuell unter Hochdruck am Aufbau einer völlig neuen
-                        Website, die voraussichtlich im Laufe des Monats Februar
+                        Website, die voraussichtlich im Laufe des Monats März
                         online gehen kann.
                         <br />
                         <br />
