@@ -71,5 +71,4 @@ jobs:
                   gh pr edit \
                   --title "Update license.json" \
                   --body "This PR was generated automatically." \
-                  --base main \
-                  -r kevinriex,kdev 
+                  --base main
