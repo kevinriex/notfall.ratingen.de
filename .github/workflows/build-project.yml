@@ -66,4 +66,11 @@ jobs:
                   --body "This PR was generated automatically." \
                   --head license-update \
                   --base main \
-                  -r kevinriex,kdev
+                  -r kevinriex,kdev \
+                  || \
+                  gh pr edit \
+                  --title "Update license.json" \
+                  --body "This PR was generated automatically." \
+                  --head license-update \
+                  --base main \
+                  -r kevinriex,kdev \
