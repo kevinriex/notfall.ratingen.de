@@ -65,10 +65,10 @@ jobs:
                   --title "Update license.json" \
                   --body "This PR was generated automatically." \
                   --head license-update \
-                  --base main \
+                  --base ${{ github.ref_name }} \
                   -r kevinriex,kdev \
                   || \
                   gh pr edit \
                   --title "Update license.json" \
                   --body "This PR was generated automatically." \
-                  --base main
+                  --base ${{ github.ref_name }}
