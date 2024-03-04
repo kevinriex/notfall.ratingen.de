@@ -47,9 +47,6 @@ jobs:
                   name: project-build-${{ github.sha }}
                   path: ./out
 
-            - name: Pull Latest Commits
-              run: git pull
-            
             - uses: stefanzweifel/git-auto-commit-action@v5
               id: auto-commit-action
               with:
@@ -57,6 +54,7 @@ jobs:
                 commit_message: 'chore: update license.json'
                 create_branch: true
                 branch: license-update
+                push_options: -f
             
             - name: Create license.json update PR
               if: steps.auto-commit-action.outputs.changes_detected == 'true'
