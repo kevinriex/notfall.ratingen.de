@@ -46,7 +46,7 @@ jobs:
               with:
                   name: project-build-${{ github.sha }}
                   path: ./out
-            
+
             - uses: stefanzweifel/git-auto-commit-action@v5
               id: auto-commit-action
               with:
@@ -54,6 +54,7 @@ jobs:
                 commit_message: 'chore: update license.json'
                 create_branch: true
                 branch: license-update
+                push_options: -f
             
             - name: Create license.json update PR
               if: steps.auto-commit-action.outputs.changes_detected == 'true'
@@ -65,4 +66,9 @@ jobs:
                   --body "This PR was generated automatically." \
                   --head license-update \
                   --base main \
-                  -r kevinriex,kdev
+                  -r kevinriex,kdev \
+                  || \
+                  gh pr edit \
+                  --title "Update license.json" \
+                  --body "This PR was generated automatically." \
+                  --base main
