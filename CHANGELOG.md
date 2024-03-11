@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.6.0...v1.7.0) (2024-03-11)
+
+
+### Features
+
+* added Amtsblatt 06 ([421af8a](https://github.com/kevinriex/notfall.ratingen.de/commit/421af8a99b678da26c18992175abea31d9530dd0))
+
 ## [1.6.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.5.0...v1.6.0) (2024-02-29)
 
 
