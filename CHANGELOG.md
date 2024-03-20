@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.7.0...v1.8.0) (2024-03-20)
+
+
+### Features
+
+* Add Amtsblatt 07 ([b48858a](https://github.com/kevinriex/notfall.ratingen.de/commit/b48858ab4850505ce0e50ff487a48afaa611b4a1))
+
 ## [1.7.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.6.0...v1.7.0) (2024-03-11)
 
 
