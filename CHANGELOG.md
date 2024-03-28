@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.9.0...v1.10.0) (2024-03-28)
+
+
+### Features
+
+* Add Amtsblatt 09 ([05ddae5](https://github.com/kevinriex/notfall.ratingen.de/commit/05ddae5cd0e9fb7e84a6b6171493a54e77403585))
+
 ## [1.9.0](https://github.com/kevinriex/notfall.ratingen.de/compare/v1.8.0...v1.9.0) (2024-03-28)
 
 
